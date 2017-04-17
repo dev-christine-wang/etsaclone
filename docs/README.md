@@ -18,6 +18,12 @@ EtsAClone is an e-commerce web application inspired by Etsy that is built using 
 
 ## Design Docs
 
+* [Wireframes](https://github.com/christinewang319/etsaclone/tree/master/docs/wireframes)
+* [React components](https://github.com/christinewang319/etsaclone/blob/master/docs/component-hierarchy.md)
+* [API endpoints](https://github.com/christinewang319/etsaclone/blob/master/docs/api-endpoints.md)
+* [DB schema](https://github.com/christinewang319/etsaclone/blob/master/docs/schema.md)
+* [Sample state](https://github.com/christinewang319/etsaclone/blob/master/docs/sample-state.md)
+
 ## Implementation Timeline
 
 ### Phase 1: Backend Setup and Front-End User Authentication (1.5 days)
