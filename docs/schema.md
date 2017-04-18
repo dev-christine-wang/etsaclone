@@ -10,34 +10,36 @@
 | email           | string    | not null, indexed, unique |              
 | password_digest | string    | not null                  |
 | session_token   | string    | not null, indexed, unique |
-
-## sellers
-
-| column name     | data type | details                   |
-|:----------------|:---------:|:--------------------------|
-| id              | integer   | not null, primary key     |
-| name            | string    | not null, indexed, unique |
+| seller          | boolean   | not null, default false   |
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |
 
 ## items
 
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
 | id              | integer   | not null, primary key     |
-| seller_id       | integer   | not null                  |
+| user_id         | integer   | not null                  |
 | name            | string    | not null                  |
+| image_url       | string    | not null                  |
 | description     | text      | not null                  |              
-| category        | string    | not null                  |
 | price           | integer   | not null                  |
-| quantity        | integer   | not null                  |      
+| category        | string    | not null                  |
+| quantity        | integer   | not null                  |
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |      
 
 ## carts
 
-| column name     | data type | details                   |
-|:----------------|:---------:|:--------------------------|
-| id              | integer   | not null, primary key     |
-| user_id         | integer   | not null, unique          |
+| column name     | data type | details                                                        |
+|:----------------|:---------:|:---------------------------------------------------------------|
+| id              | integer   | not null, primary key                                          |
+| user_id         | integer   | not null                                                       |
+| purchased       | boolean   | not null, default false, user can only have one purchased cart |
+| created_at      | datetime  | not null                                                       |
+| updated_at      | datetime  | not null                                                       |  
 
-## pending_transactions
+## cart_items
 
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
@@ -45,13 +47,8 @@
 | cart_id         | integer   | not null                  |
 | item_id         | integer   | not null                  |
 | item_quantity   | integer   | not null                  |
-
-## completed_transactions
-
-| column name     | data type | details                   |
-|:----------------|:---------:|:--------------------------|
-| id              | integer   | not null, primary key     |
-| cart_id         | integer   | not null                  |
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |
 
 ## reviews
 
@@ -62,5 +59,5 @@
 | user_id         | integer   | not null                  |
 | rating          | integer   | not null                  |
 | description     | text      | not null                  |
-
-[//]: # (Remember to include timestamps!)
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |

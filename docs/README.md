@@ -34,17 +34,17 @@ EtsAClone is an e-commerce web application inspired by Etsy that is built using 
 
 **Objective:** Show all the listed items  
 
-### Phase 3: Search Bar
-
-**Objective:** Allow user to search for items and sellers in the search bar
-
-### Phase 4: Shopping Cart
+### Phase 3: Shopping Cart (2 days)
 
 **Objective:** Allow user to add items to his/her shopping cart, make a purchase, and see purchase history
 
-### Phase 5: Reviews
+### Phase 4: Reviews (2 days)
 
 **Objective:** Allow user to write reviews on purchased items
+
+### Phase 5: Search Bar (1 day)
+
+**Objective:** Allow user to search for items and sellers in the search bar
 
 ### Bonus Features (TBD)
 
