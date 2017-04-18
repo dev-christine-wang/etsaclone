@@ -13,11 +13,11 @@
 
 * `POST /api/users`
 * `PATCH /api/users`
-* `GET /api/users/:id/pending_transactions`
-  * displays a list of all the pending transactions for a user
-* `GET /api/users/:id/completed_transactions`
-  * displays a list of all the completed transactions by a user
-* `GET /api/users/:id/reviews`
+* `GET /api/users/:userId`
+  * displays current user
+* `GET /api/users/:userId/carts/:cartId/items`
+  * displays a list of all the items in a user's cart
+* `GET /api/users/:userId/reviews`
   * displays a list of all the reviews submitted by a user
 
 ### Session
@@ -29,25 +29,19 @@
 
 * `GET /api/sellers`
   * displays a list of all the sellers
-* `GET /api/sellers/:id`
+* `GET /api/sellers/:sellerId`
   * displays a seller
-* `GET /api/sellers/:id/items`
+* `GET /api/sellers/:sellerId/items`
   * displays a list of all the items that a seller has listed for sale
 
 ### Items
 
 * `GET /api/items`
-* `GET /api/items/:id/reviews`
+* `GET /api/items/:itemId/reviews`
   * displays a list of all the reviews for an item
-
-### Transactions
-
-* `POST /api/transactions`
-* `PATCH /api/transactions/:id`
-* `DELETE /api/transactions/:id`
 
 ### Reviews
 
 * `POST /api/reviews`
-* `PATCH /api/reviews/:id`
-* `DELETE /api/reviews/:id`
+* `PATCH /api/reviews/:reviewId`
+* `DELETE /api/reviews/:reviewId`
