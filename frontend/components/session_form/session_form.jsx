@@ -60,7 +60,6 @@ class SessionForm extends React.Component {
       return (
         <div className='register-form-container'>
           <form onSubmit={this.handleSubmit} className='register-form-box'>
-            {this.renderErrors()}
             <div className='register-form'>
               <br/>
               <label>First Name
@@ -96,6 +95,8 @@ class SessionForm extends React.Component {
               </label>
               <br/>
               <input type='submit' value='Register' />
+              <br/>
+              {this.renderErrors()}
             </div>
           </form>
         </div>
@@ -104,7 +105,6 @@ class SessionForm extends React.Component {
       return (
         <div className='signin-form-container'>
           <form onSubmit={this.handleSubmit} className='signin-form-box'>
-            {this.renderErrors()}
             <div className='signin-form'>
               <label> Email
                 <br/>
@@ -123,6 +123,8 @@ class SessionForm extends React.Component {
               </label>
               <br/>
               <input type='submit' value='Sign In' />
+              <br/>
+              {this.renderErrors()}
             </div>
           </form>
         </div>
