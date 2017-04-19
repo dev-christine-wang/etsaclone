@@ -5,7 +5,7 @@
   border-bottom: 1px solid $light-gray;
 }
 
-.logo > ul, .register-signin > ul {
+.logo > ul, .register-signin-nav > ul, .signout-nav > ul {
   display: flex;
   align-items: center;
 }
@@ -16,7 +16,7 @@
   color: $dark-orange;
 }
 
-.register-signin {
+.register-signin-nav, .signout-nav {
   display: flex;
   align-items: center;
   font-family: $sans-serif;
@@ -24,15 +24,19 @@
   color: $blue;
 }
 
-.register-signin > ul > li {
+.register-signin-nav > ul > li, .signout-nav > ul > li {
   margin-right: 20px;
 }
 
-.register-signin > ul > li:last-of-type {
+.register-signin-nav > ul > li:last-of-type {
   margin-right: 0;
 }
 
-.signin-link {
+.signout-nav > ul >li:last-of-type {
+  margin-right: 0;
+}
+
+.session-link {
   padding: 8px;
   border: 1px solid $blue;
   border-radius: 4px;

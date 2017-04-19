@@ -10,12 +10,12 @@ const sessionSignInLinks = signin => (
         </li>
       </ul>
     </nav>
-    <nav className='register-signin'>
+    <nav className='register-signin-nav'>
       <ul>
         <li>
           <Link to='/register' activeClassName='current'>Register</Link>
         </li>
-        <li className='signin-link'>
+        <li className='session-link'>
           <Link to='/signin' activeClassName='current'>Sign In</Link>
         </li>
         <li>
@@ -35,9 +35,15 @@ const sessionSignOutLink = (currentUser, signout) => (
         </li>
       </ul>
     </nav>
-    <nav className='signout'>
-      <p>{`${currentUser.first_name} ${currentUser.last_name}`}</p>
-      <button onClick={ signout }>Sign Out</button>
+    <nav className='signout-nav'>
+      <ul>
+        <li>
+          <span>{`${currentUser.first_name}`}</span>
+        </li>
+        <li className='session-link'>
+          <button onClick={ signout }>Sign Out</button>
+        </li>
+      </ul>
     </nav>
 </header>
 );
