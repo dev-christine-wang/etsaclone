@@ -53,17 +53,25 @@ class SessionForm extends React.Component {
     }
   }
 
-  renderErrors() {
-    return(
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={ `error-${i}` }>
-            { error }
-          </li>
-        ))}
-      </ul>
-    );
-  }
+  // renderErrors() {
+  //   return(
+  //     <ul>
+  //       {this.props.errors.map((error, i) => (
+  //         <li key={ `error-${i}` }>
+  //           { error }
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
+
+  // renderError(error) {
+  //   if (this.props.errors['error']) {
+  //     return(
+  //       <p>{this.props.errors.error}</p>
+  //     )
+  //   }
+  // }
 
   render() {
     if (this.props.formType === 'register') {
@@ -78,6 +86,8 @@ class SessionForm extends React.Component {
                         value={this.state.first_name}
                         onChange={this.update('first_name')}
                         className='register-input' />
+                &nbsp;
+                <span>{this.props.errors.first_name}</span>
               </label>
               <br/>
               <label>Last Name
@@ -86,6 +96,8 @@ class SessionForm extends React.Component {
                         value={this.state.last_name}
                         onChange={this.update('last_name')}
                         className='register-input' />
+                &nbsp;
+                <span>{this.props.errors.last_name}</span>
               </label>
               <br/>
               <label> Email
@@ -94,6 +106,8 @@ class SessionForm extends React.Component {
                         value={this.state.email}
                         onChange={this.update('email')}
                         className='register-input' />
+                &nbsp;
+                <span>{this.props.errors.email}</span>
               </label>
               <br/>
               <label> Password
@@ -102,11 +116,12 @@ class SessionForm extends React.Component {
                         value={this.state.password}
                         onChange={this.update('password')}
                         className='register-input' />
+                &nbsp;
+                <span>{this.props.errors.password}</span>
               </label>
               <br/>
               <input type='submit' value='Register' />
               <br/>
-              {this.renderErrors()}
             </div>
           </form>
         </div>
@@ -122,6 +137,8 @@ class SessionForm extends React.Component {
                   value={this.state.email}
                   onChange={this.update('email')}
                   className='signin-input' />
+                &nbsp;
+                <span>{this.props.errors.base}</span>
               </label>
               <br/>
               <label> Password
@@ -130,11 +147,12 @@ class SessionForm extends React.Component {
                   value={this.state.password}
                   onChange={this.update('password')}
                   className='signin-input' />
+                &nbsp;
+                <span>{this.props.errors.base}</span>
               </label>
               <br/>
               <input type='submit' value='Sign In' />
               <br/>
-              {this.renderErrors()}
             </div>
           </form>
         </div>
