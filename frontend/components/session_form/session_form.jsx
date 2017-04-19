@@ -53,26 +53,6 @@ class SessionForm extends React.Component {
     }
   }
 
-  // renderErrors() {
-  //   return(
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={ `error-${i}` }>
-  //           { error }
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
-
-  // renderError(error) {
-  //   if (this.props.errors['error']) {
-  //     return(
-  //       <p>{this.props.errors.error}</p>
-  //     )
-  //   }
-  // }
-
   render() {
     if (this.props.formType === 'register') {
       return (
