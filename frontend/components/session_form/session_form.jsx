@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
                 <span>{this.props.errors.last_name}</span>
               </label>
               <br/>
-              <label> Email
+              <label>Email
                 <br/>
                 <input type='text'
                         value={this.state.email}
@@ -92,7 +92,7 @@ class SessionForm extends React.Component {
                 <span>{this.props.errors.email}</span>
               </label>
               <br/>
-              <label> Password
+              <label>Password
                 <br/>
                 <input type='password'
                         value={this.state.password}
@@ -104,6 +104,7 @@ class SessionForm extends React.Component {
               <br/>
               <input type='submit' value='Register' />
               <br/>
+              <p>By clicking Register, you agree to EtsAClone's Terms of User and Privacy Policy.</p>
             </div>
           </form>
         </div>
@@ -116,7 +117,7 @@ class SessionForm extends React.Component {
               <span>Sign into EtsAClone</span>
             </div>
             <div className='signin-form'>
-              <label> Email
+              <label>Email
                 <br/>
                 <input type='text'
                   value={this.state.email}
@@ -126,7 +127,7 @@ class SessionForm extends React.Component {
                 <span>{this.props.errors.base}</span>
               </label>
               <br/>
-              <label> Password
+              <label>Password
                 <br/>
                 <input type='password'
                   value={this.state.password}

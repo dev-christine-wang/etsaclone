@@ -22,7 +22,7 @@
   border-left: 1px solid $dark-gray;
   border-radius: 4px 4px 0 0;
   font-size: 20px;
-  color: $darker-gray;
+  color: $darkest-gray;
 }
 
 .register-form, .signin-form {
@@ -44,7 +44,7 @@
 }
 
 .register-form input[type=submit], .signin-form input[type=submit] {
-  margin: 8px 0 0 0;
+  margin: 8px 0;
   width: 90px;
   background-color: $light-blue;
   border: 1px solid $dark-gray;
@@ -53,4 +53,10 @@
   font-size: 14px;
   font-weight: bold;
   color: white;
+}
+
+.register-form > p {
+  margin-top: 2px;
+  font-size: 11px;
+  color: $darker-gray;
 }
