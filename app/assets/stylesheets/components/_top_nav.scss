@@ -1,0 +1,39 @@
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.logo > ul, .register-signin > ul {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: $serif;
+  font-size: 38px;
+  color: $dark-orange;
+}
+
+.register-signin {
+  display: flex;
+  align-items: center;
+  font-family: $sans-serif;
+  font-size: 14px;
+  color: $blue;
+}
+
+.register-signin > ul > li {
+  margin-right: 20px;
+}
+
+.register-signin > ul > li:last-of-type {
+  margin-right: 0;
+}
+
+.signin-link {
+  padding: 8px;
+  border: 1px solid $blue;
+  border-radius: 4px;
+}

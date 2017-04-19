@@ -2,13 +2,28 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const sessionSignInLinks = signin => (
-  <nav className='register-signin'>
-    <Link to='/register' activeClassName='current'>Register</Link>
-    &nbsp;
-    <Link to='/signin' activeClassName='current'>Sign In</Link>
-    &nbsp;
-    <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
-  </nav>
+  <header className='top_nav'>
+    <nav className='logo'>
+      <ul>
+        <li>
+          <Link to='/' activeClassName='current'>EtsAClone</Link>
+        </li>
+      </ul>
+    </nav>
+    <nav className='register-signin'>
+      <ul>
+        <li>
+          <Link to='/register' activeClassName='current'>Register</Link>
+        </li>
+        <li className='signin-link'>
+          <Link to='/signin' activeClassName='current'>Sign In</Link>
+        </li>
+        <li>
+          <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 );
 
 const sessionSignOutLink = (currentUser, signout) => (
