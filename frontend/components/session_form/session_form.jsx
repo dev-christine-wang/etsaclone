@@ -58,8 +58,10 @@ class SessionForm extends React.Component {
       return (
         <div className='register-form-container'>
           <form onSubmit={this.handleSubmit} className='register-form-box'>
+            <div className='sign-in-message'>
+              <span>Create an EtsAClone account and start shopping</span>
+            </div>
             <div className='register-form'>
-              <br/>
               <label>First Name
                 <br/>
                 <input type='text'
