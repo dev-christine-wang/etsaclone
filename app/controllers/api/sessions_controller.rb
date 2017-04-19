@@ -10,7 +10,7 @@ class Api::SessionsController < ApplicationController
       render "api/users/show"
     else
       render(
-        json: { base: ["invalid email and/or password"] },
+        json: { base: ["invalid credentials"] },
         status: 401
       )
     end
