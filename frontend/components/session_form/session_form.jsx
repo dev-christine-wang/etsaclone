@@ -56,31 +56,72 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    return (
-      <div className='signin-form-container'>
-        <form onSubmit={this.handleSubmit} className='signin-form-box'>
-          {this.renderErrors()}
-          <div className='signin-form'>
-            <br/>
-            <label> Email
-              <input type='text'
-                      value={this.state.email}
-                      onChange={this.update('username')}
-                      className='signin-input' />
-            </label>
-            <br/>
-            <label> Password
-              <input type='password'
-                      value={this.state.password}
-                      onChange={this.update('password')}
-                      className='signin-input' />
-            </label>
-            <br/>
-            <input type='submit' value='Sign in' />
-          </div>
-        </form>
-      </div>
-    );
+    if (this.props.formType === 'register') {
+      return (
+        <div className='register-form-container'>
+          <form onSubmit={this.handleSubmit} className='register-form-box'>
+            {this.renderErrors()}
+            <div className='register-form'>
+              <br/>
+              <label>First Name&nbsp;
+                <input type='text'
+                        value={this.state.first_name}
+                        onChange={this.update('first_name')}
+                        className='signin-input' />
+              </label>
+              <br/>
+              <label>Last Name&nbsp;
+                <input type='text'
+                        value={this.state.last_name}
+                        onChange={this.update('last_name')}
+                        className='signin-input' />
+              </label>
+              <br/>
+              <label> Email&nbsp;
+                <input type='text'
+                        value={this.state.email}
+                        onChange={this.update('email')}
+                        className='signin-input' />
+              </label>
+              <br/>
+              <label> Password&nbsp;
+                <input type='password'
+                        value={this.state.password}
+                        onChange={this.update('password')}
+                        className='signin-input' />
+              </label>
+              <br/>
+              <input type='submit' value='Register' />
+            </div>
+          </form>
+        </div>
+      );
+    } else {
+      return (
+        <div className='signin-form-container'>
+          <form onSubmit={this.handleSubmit} className='signin-form-box'>
+            {this.renderErrors()}
+            <div className='signin-form'>
+              <label> Email&nbsp;
+                <input type='text'
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  className='signin-input' />
+              </label>
+              <br/>
+              <label> Password&nbsp;
+                <input type='password'
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className='signin-input' />
+              </label>
+              <br/>
+              <input type='submit' value='Sign In' />
+            </div>
+          </form>
+        </div>
+      );
+    }
   }
 }
 
