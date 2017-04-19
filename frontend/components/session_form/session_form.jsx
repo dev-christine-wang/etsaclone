@@ -63,28 +63,32 @@ class SessionForm extends React.Component {
             {this.renderErrors()}
             <div className='register-form'>
               <br/>
-              <label>First Name&nbsp;
+              <label>First Name
+                <br/>
                 <input type='text'
                         value={this.state.first_name}
                         onChange={this.update('first_name')}
                         className='register-input' />
               </label>
               <br/>
-              <label>Last Name&nbsp;
+              <label>Last Name
+                <br/>
                 <input type='text'
                         value={this.state.last_name}
                         onChange={this.update('last_name')}
                         className='register-input' />
               </label>
               <br/>
-              <label> Email&nbsp;
+              <label> Email
+                <br/>
                 <input type='text'
                         value={this.state.email}
                         onChange={this.update('email')}
                         className='register-input' />
               </label>
               <br/>
-              <label> Password&nbsp;
+              <label> Password
+                <br/>
                 <input type='password'
                         value={this.state.password}
                         onChange={this.update('password')}
@@ -102,14 +106,16 @@ class SessionForm extends React.Component {
           <form onSubmit={this.handleSubmit} className='signin-form-box'>
             {this.renderErrors()}
             <div className='signin-form'>
-              <label> Email&nbsp;
+              <label> Email
+                <br/>
                 <input type='text'
                   value={this.state.email}
                   onChange={this.update('email')}
                   className='signin-input' />
               </label>
               <br/>
-              <label> Password&nbsp;
+              <label> Password
+                <br/>
                 <input type='password'
                   value={this.state.password}
                   onChange={this.update('password')}
