@@ -27,14 +27,23 @@ const sessionSignInLinks = signin => (
 );
 
 const sessionSignOutLink = (currentUser, signout) => (
-  <nav className='signout'>
-    <p>{`${currentUser.first_name} ${currentUser.last_name}`}</p>
-    <button onClick={ signout }>Sign Out</button>
-  </nav>
+  <header className='top_nav'>
+    <nav className='logo'>
+      <ul>
+        <li>
+          <Link to='/' activeClassName='current'>EtsAClone</Link>
+        </li>
+      </ul>
+    </nav>
+    <nav className='signout'>
+      <p>{`${currentUser.first_name} ${currentUser.last_name}`}</p>
+      <button onClick={ signout }>Sign Out</button>
+    </nav>
+</header>
 );
 
-const SessionLinks = ({ currentUser, signout, signin }) => (
+const TopNav = ({ currentUser, signout, signin }) => (
   currentUser ? sessionSignOutLink(currentUser, signout) : sessionSignInLinks(signin)
 );
 
-export default SessionLinks;
+export default TopNav;
