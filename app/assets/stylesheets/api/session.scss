@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .register-form-box {
   margin: 40px auto auto auto;
-  padding: 5px;
+  padding: 4px;
   width: 50%;
   background-color: $gray;
   border: 1px solid $gray;
@@ -17,7 +17,9 @@
   padding: 3%;
   width: 94%;
   background-color: $lightest-gray;
-  border: 1px solid $dark-gray;
+  border-top: 1px solid $dark-gray;
+  border-right: 1px solid $dark-gray;
+  border-left: 1px solid $dark-gray;
   border-radius: 4px 4px 0 0;
   font-size: 20px;
   color: $darker-gray;
@@ -25,8 +27,8 @@
 
 .register-form {
   margin: auto;
-  padding: 5%;
-  width: 90%;
+  padding: 5% 8%;
+  width: 84%;
   background-color: white;
   border-left: 1px solid $dark-gray;
   border-right: 1px solid $dark-gray;
@@ -50,6 +52,14 @@
   height: 30px;
 }
 
-.register-form input:last-of-type {
-  
+.register-form input[type=submit] {
+  margin: 8px 0 0 0;
+  width: 90px;
+  background-color: $light-blue;
+  border: 1px solid $dark-gray;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }

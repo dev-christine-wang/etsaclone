@@ -68,7 +68,7 @@ class SessionForm extends React.Component {
                         value={this.state.first_name}
                         onChange={this.update('first_name')}
                         className='register-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.first_name}</span>
               </label>
               <br/>
@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
                         value={this.state.last_name}
                         onChange={this.update('last_name')}
                         className='register-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.last_name}</span>
               </label>
               <br/>
@@ -88,7 +88,7 @@ class SessionForm extends React.Component {
                         value={this.state.email}
                         onChange={this.update('email')}
                         className='register-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.email}</span>
               </label>
               <br/>
@@ -98,7 +98,7 @@ class SessionForm extends React.Component {
                         value={this.state.password}
                         onChange={this.update('password')}
                         className='register-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.password}</span>
               </label>
               <br/>
@@ -119,7 +119,7 @@ class SessionForm extends React.Component {
                   value={this.state.email}
                   onChange={this.update('email')}
                   className='signin-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.base}</span>
               </label>
               <br/>
@@ -129,7 +129,7 @@ class SessionForm extends React.Component {
                   value={this.state.password}
                   onChange={this.update('password')}
                   className='signin-input' />
-                &nbsp;
+                &nbsp;&nbsp;
                 <span>{this.props.errors.base}</span>
               </label>
               <br/>
