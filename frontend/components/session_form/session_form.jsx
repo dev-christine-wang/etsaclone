@@ -58,7 +58,7 @@ class SessionForm extends React.Component {
       return (
         <div className='register-form-container'>
           <form onSubmit={this.handleSubmit} className='register-form-box'>
-            <div className='sign-in-message'>
+            <div className='register-message'>
               <span>Create an EtsAClone account and start shopping</span>
             </div>
             <div className='register-form'>
@@ -112,6 +112,9 @@ class SessionForm extends React.Component {
       return (
         <div className='signin-form-container'>
           <form onSubmit={this.handleSubmit} className='signin-form-box'>
+            <div className='sign-in-message'>
+              <span>Sign into EtsAClone</span>
+            </div>
             <div className='signin-form'>
               <label> Email
                 <br/>

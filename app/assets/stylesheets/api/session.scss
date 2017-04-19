@@ -1,7 +1,7 @@
 // Place all the styles related to the api/session controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.register-form-box {
+.register-form-box, .signin-form-box {
   margin: 40px auto auto auto;
   padding: 4px;
   width: 50%;
@@ -12,7 +12,7 @@
   font-size: 12px;
 }
 
-.sign-in-message {
+.register-message, .sign-in-message {
   margin: auto;
   padding: 3%;
   width: 94%;
@@ -25,7 +25,7 @@
   color: $darker-gray;
 }
 
-.register-form {
+.register-form, .signin-form {
   margin: auto;
   padding: 5% 8%;
   width: 84%;
@@ -36,23 +36,14 @@
   border-radius: 0 0  4px 4px;
 }
 
-.signin-form {
-  margin: auto;
-  width: 50%;
-  height: 90%;
-  border: 1px solid black;
-  font-family: $sans-serif;
-  font-size: 12px;
-}
-
-.register-form input {
+.register-form input, .signin-form input {
   margin: 2px 0 8px 0;
   border: 1px solid $dark-gray;
   width: 240px;
   height: 30px;
 }
 
-.register-form input[type=submit] {
+.register-form input[type=submit], .signin-form input[type=submit] {
   margin: 8px 0 0 0;
   width: 90px;
   background-color: $light-blue;
