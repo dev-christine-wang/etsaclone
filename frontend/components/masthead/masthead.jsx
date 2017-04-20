@@ -4,7 +4,7 @@ const Masthead = () => {
   return(
     <header>
       <div className='masthead-image'>
-        <img src='/assets/etsaclone_masthead.jpg' alt='EtsAClone' />
+        <img src={window.images.masthead} alt='EtsAClone' />
       </div>
     </header>
   );
