@@ -1,9 +1,22 @@
+.section-description {
+  margin: 32px auto;
+  width: 100%;
+  text-align: center;
+  font-family: $sans-serif;
+  font-size: 24px;
+  color: $light-black
+}
+
 .items-index {
   margin: auto;
-  width: 20%;
-  border: 1px solid $light-gray;
+  width: 24%;
+  border-top: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+  border-bottom: 1.9px solid $dark-gray;
+  border-left: 1px solid $light-gray;
+  border-radius: 2px;
   font-family: $sans-serif;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .items-index > ul {
@@ -11,21 +24,35 @@
   align-items: center;
 }
 
+.item-index-item {
+  border-radius: 2px;
+}
+
 .item-name {
-  font-size: 11px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  color: $darkest-gray;
 }
 
 .item-details {
   display: flex;
   justify-content: space-between;
-
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 .item-seller {
   display: flex;
   justify-content: flex-start;
+  color: $darker-gray;
 }
 
 .item-price {
   display: flex;
   justify-content: flex-end;
+  color: $green;
 }

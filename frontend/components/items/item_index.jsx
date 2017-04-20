@@ -10,14 +10,14 @@ class ItemIndex extends Component {
     const { items, children } = this.props;
 
     return (
-      <div>
-        <h2>Browse our latest collections</h2>
+      <section>
+        <h2 className='section-description' id='font'>Browse our latest handmade goods</h2>
         <div className='items-index'>
           <ul>
             { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }
