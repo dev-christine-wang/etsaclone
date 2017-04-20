@@ -3,7 +3,8 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
-import Masthead from './masthead/masthead'
+import Masthead from './masthead/masthead';
+import ItemIndexContainer from './items/item_index_container';
 import SessionFormContainer from './session_form/session_form_container';
 
 const Root = ({ store }) => {
@@ -26,7 +27,7 @@ const Root = ({ store }) => {
     <Provider store={ store }>
       <Router history={ hashHistory }>
         <Route path='/' component={ App }>
-          <IndexRoute component={ Masthead } />
+          <IndexRoute components={{ middle: Masthead, bottom: ItemIndexContainer } } />
           <Route path='/register' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/signin' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
         </Route>

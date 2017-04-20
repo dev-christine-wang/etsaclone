@@ -19,7 +19,7 @@
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
 | id              | integer   | not null, primary key     |
-| user_id         | integer   | not null                  |
+| seller_id       | integer   | not null                  |
 | name            | string    | not null                  |
 | image_url       | string    | not null                  |
 | description     | text      | not null                  |              
