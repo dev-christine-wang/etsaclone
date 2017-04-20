@@ -51,8 +51,8 @@ seller_ruby = User.create!(
 
 Item.create!(
   seller_id: seller_tina.id,
-  name: "Rose Quartz Infinity Ring",
-  description: "Material: Sterling Silver 925. Color: Rose Gold. Size: US Ring Size 6.",
+  name: "Mixed Metal Stacking Ring Set",
+  description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, and sterling silver. Size: US Ring Size 6. Other: 1 mm band",
   price: 27,
   category: "ring",
   quantity: 100
