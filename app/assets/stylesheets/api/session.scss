@@ -1,7 +1,7 @@
 .register-form-box, .signin-form-box {
   margin: 40px auto auto auto;
   padding: .30%;
-  width: 45%;
+  width: 40%;
   background-color: $gray;
   border: 1px solid $gray;
   border-radius: 4px;
@@ -12,7 +12,7 @@
 .register-message, .sign-in-message {
   margin: auto;
   padding: 3%;
-  width: 93.75%;
+  width: 93.73%;
   background-color: $lightest-gray;
   border-top: 1px solid $dark-gray;
   border-right: 1px solid $dark-gray;
@@ -25,7 +25,7 @@
 .register-form, .signin-form {
   margin: auto;
   padding: 5% 8%;
-  width: 83.75%;
+  width: 83.73%;
   background-color: white;
   border-left: 1px solid $dark-gray;
   border-right: 1px solid $dark-gray;
