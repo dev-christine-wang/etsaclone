@@ -4,7 +4,7 @@
 .register-form-box, .signin-form-box {
   margin: 40px auto auto auto;
   padding: 4px;
-  width: 50%;
+  width: 40%;
   background-color: $gray;
   border: 1px solid $gray;
   border-radius: 4px;
@@ -39,7 +39,7 @@
 .register-form input, .signin-form input {
   margin: 2px 0 8px 0;
   border: 1px solid $dark-gray;
-  width: 240px;
+  width: 40%;
   height: 30px;
 }
 
@@ -63,4 +63,8 @@
   margin-top: 2px;
   font-size: 11px;
   color: $darker-gray;
+}
+
+#form-field {
+  padding-left: 8px;
 }

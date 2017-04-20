@@ -64,7 +64,8 @@ class SessionForm extends React.Component {
             <div className='register-form'>
               <label>First Name
                 <br/>
-                <input type='text'
+                <input id='form-field'
+                        type='text'
                         value={this.state.first_name}
                         onChange={this.update('first_name')}
                         className='register-input' />
@@ -74,7 +75,8 @@ class SessionForm extends React.Component {
               <br/>
               <label>Last Name
                 <br/>
-                <input type='text'
+                <input id='form-field'
+                        type='text'
                         value={this.state.last_name}
                         onChange={this.update('last_name')}
                         className='register-input' />
@@ -84,7 +86,8 @@ class SessionForm extends React.Component {
               <br/>
               <label>Email
                 <br/>
-                <input type='text'
+                <input id='form-field'
+                        type='text'
                         value={this.state.email}
                         onChange={this.update('email')}
                         className='register-input' />
@@ -94,7 +97,8 @@ class SessionForm extends React.Component {
               <br/>
               <label>Password
                 <br/>
-                <input type='password'
+                <input id='form-field'
+                        type='password'
                         value={this.state.password}
                         onChange={this.update('password')}
                         className='register-input' />
@@ -119,20 +123,22 @@ class SessionForm extends React.Component {
             <div className='signin-form'>
               <label>Email
                 <br/>
-                <input type='text'
-                  value={this.state.email}
-                  onChange={this.update('email')}
-                  className='signin-input' />
+                <input id='form-field'
+                        type='text'
+                        value={this.state.email}
+                        onChange={this.update('email')}
+                        className='signin-input' />
                 &nbsp;&nbsp;
                 <span>{this.props.errors.base}</span>
               </label>
               <br/>
               <label>Password
                 <br/>
-                <input type='password'
-                  value={this.state.password}
-                  onChange={this.update('password')}
-                  className='signin-input' />
+                <input id='form-field'
+                        type='password'
+                        value={this.state.password}
+                        onChange={this.update('password')}
+                        className='signin-input' />
                 &nbsp;&nbsp;
                 <span>{this.props.errors.base}</span>
               </label>
