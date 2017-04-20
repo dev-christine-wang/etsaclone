@@ -55,5 +55,9 @@ Item.create!(
   description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, and sterling silver. Size: US Ring Size 6. Other: 1 mm band",
   price: 27,
   category: "ring",
-  quantity: 100
+  quantity: 100,
+  image: File.open("app/assets/images/ring-default.jpg")
 )
+
+# image: File.open("app/assets/images/ring-default.jpg")
+# Image.create(image: File.open("app/assets/images/ring-default.jpg"), user_id: user.id)
