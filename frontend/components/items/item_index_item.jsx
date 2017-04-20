@@ -3,16 +3,18 @@ import { Link } from 'react-router';
 
 const ItemIndexItem = ({ item }) => {
   return (
-    <li className='item-index'>
+    <li className='item-index-item'>
       <ul>
         <li>
             <Link to={ `/items/${item.id}` }>
               <img src={ item.image } alt={ item.name } />
             </Link>
         </li>
-        <li>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
-        <li>{ item.name }</li>
-        <li>{ item.price }</li>
+        <li className='item-name'>{ item.name }</li>
+        <ul className='item-details'>
+          <li className='item-seller'>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
+          <li className='item-price'>{ `$${item.price}.00` }</li>
+        </ul>
       </ul>
     </li>
   );

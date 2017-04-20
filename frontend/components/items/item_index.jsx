@@ -10,11 +10,13 @@ class ItemIndex extends Component {
     const { items, children } = this.props;
 
     return (
-      <div className='items-index'>
+      <div>
         <h2>Browse our latest collections</h2>
-        <ul>
-          { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
-        </ul>
+        <div className='items-index'>
+          <ul>
+            { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
+          </ul>
+        </div>
       </div>
     );
   }
