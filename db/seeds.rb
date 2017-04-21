@@ -188,5 +188,15 @@ Item.create!(
   quantity: 100,
   image: File.open("app/assets/images/earrings_2.png")
 )
+
+Item.create!(
+  seller_id: seller_joyce.id,
+  name: "Mini Gold Triangle Necklace",
+  description: "Material: Polymer clay, gold foil, brass. Chain length: 20\". Other: Triangle measures approximately 24mm x 21mm.",
+  price: 25,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_5.png")
+)
 # image: File.open("app/assets/images/ring-default.jpg")
 # Image.create(image: File.open("app/assets/images/ring-default.jpg"), user_id: user.id)
