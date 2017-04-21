@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+
 import ItemIndexItem from './item_index_item';
 
 class ItemIndex extends Component {
