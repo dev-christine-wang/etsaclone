@@ -17,7 +17,7 @@ class ItemIndex extends Component {
           <h2 className='section-description'>All Accessories</h2>
           <div className='items-index'>
             <ul>
-              { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
+              { items.reverse().map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
         </section>
@@ -34,7 +34,7 @@ class ItemIndex extends Component {
           </h2>
           <div className='items-index'>
             <ul>
-              { itemPreview.map(item => <ItemIndexItem key={item.id} item={item} />)}
+              { itemPreview.reverse().map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
         </section>
