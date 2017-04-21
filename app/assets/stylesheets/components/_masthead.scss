@@ -1,6 +1,7 @@
 .masthead {
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .masthead-image {
@@ -15,14 +16,24 @@
 
 .masthead-message {
   position: absolute;
-  padding-top: 75px;
-  padding-right: 400px;
-  font-family: "Palatino";
-  font-size: 50px;
-  font-weight: lighter;
-  color: $light-black;
+  top: 18%;
+  right: 18%;
 }
 
 .masthead-message > li {
-  display: flex;
+  font-family: 'Martel', serif;
+  font-size: 2.8em;
+  font-weight: 100;
+  color: $light-black;
+}
+
+.masthead-message-line-1 {
+  display: block;
+  position: relative;
+}
+
+.masthead-message-line-2 {
+  display: block;
+  position: absolute;
+  top: 82%;
 }

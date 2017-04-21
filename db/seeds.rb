@@ -109,5 +109,15 @@ Item.create!(
   image: File.open("app/assets/images/ring_6.jpg")
 )
 
+Item.create!(
+  seller_id: seller_tina.id,
+  name: "MM Stacking Ring Set - CV Diamond",
+  description: "SET OF 3. Material: 14k yellow gold filled, 14k rose gold filled, sterling silver. Size: US Ring Size 6. Other: 3mm cv diamond, 1 mm band.",
+  price: 28,
+  category: "ring",
+  quantity: 100,
+  image: File.open("app/assets/images/ring_7.jpg")
+)
+
 # image: File.open("app/assets/images/ring-default.jpg")
 # Image.create(image: File.open("app/assets/images/ring-default.jpg"), user_id: user.id)

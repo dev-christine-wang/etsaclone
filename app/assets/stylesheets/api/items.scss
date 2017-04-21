@@ -1,5 +1,5 @@
 .section-description {
-  margin: 32px auto;
+  margin: 40px auto 20px auto;
   width: 100%;
   text-align: center;
   font-family: $sans-serif;
@@ -17,13 +17,13 @@
 
 .items-index > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
 .item-index-item {
   margin: 0 6px 50px 6px;
-  width: 225px;
+  width: 226.28px;
   border-top: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
   border-bottom: 1.9px solid $dark-gray;
