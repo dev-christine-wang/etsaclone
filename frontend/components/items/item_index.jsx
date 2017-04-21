@@ -14,7 +14,7 @@ class ItemIndex extends Component {
     if (this.props.location.pathname.slice(1) === 'items') {
       return (
         <section className='section-description'>
-          <h2 className='all-items'>All Accessories</h2>
+          <h2 className='all-items'>Accessories</h2>
           <div className='items-index'>
             <ul>
               { items.reverse().map(item => <ItemIndexItem key={item.id} item={item} />)}
