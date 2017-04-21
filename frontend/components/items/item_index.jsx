@@ -11,21 +11,38 @@ class ItemIndex extends Component {
   render() {
     const { items, children } = this.props;
 
-    return (
-      <section>
-        <h2 className='section-description'>
-          <Link to='/items' activeClassName='current'>
-            Browse our latest handmade goods
-          </Link>
-        </h2>
-        <div className='items-index'>
-          <ul>
-            { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
-          </ul>
-        </div>
-      </section>
-    );
+    if (this.props.location.pathname.slice(1) === 'items') {
+      return (
+        <section>
+          <h2 className='section-description'>All Accessories</h2>
+          <div className='items-index'>
+            <ul>
+              { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
+            </ul>
+          </div>
+        </section>
+      );
+    } else {
+      let itemPreview = items.slice(items.length - 14);
+
+      return (
+        <section>
+          <h2 className='section-description'>
+            <Link to='/items' activeClassName='current'>
+              Browse our latest handmade goods
+            </Link>
+          </h2>
+          <div className='items-index'>
+            <ul>
+              { itemPreview.map(item => <ItemIndexItem key={item.id} item={item} />)}
+            </ul>
+          </div>
+        </section>
+      );
+    }
   }
 }
 
 export default ItemIndex;
+
+// ownProps.location.pathname.slice(1)
