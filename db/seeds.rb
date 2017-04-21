@@ -198,5 +198,65 @@ Item.create!(
   quantity: 100,
   image: File.open("app/assets/images/necklace_5.png")
 )
+
+Item.create!(
+  seller_id: seller_joyce.id,
+  name: "Gold Rhombus Necklace",
+  description: "Material: 14k yellow gold filled. Chain length: 20\". Other: Pendant measures approximately 26mm x 18mm.",
+  price: 28,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_6.png")
+)
+
+Item.create!(
+  seller_id: seller_joyce.id,
+  name: "Gold Crystal Glass Necklace",
+  description: "Material: 14k yellow gold filled. Chain length: 20\". Other: Glass pendant measures approximately 20mm x 20mm.",
+  price: 20,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_7.png")
+)
+
+Item.create!(
+  seller_id: seller_joyce.id,
+  name: "Turquoise Gold Necklace",
+  description: "Material: 14k yellow gold filled, polymer clay, gold foil. Chain length: 18\". Other: Center piece measures approximately 20mm x 20mm.",
+  price: 22,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_8.png")
+)
+
+Item.create!(
+  seller_id: seller_joyce.id,
+  name: "Tiny Gold Hamsa Earrings",
+  description: "Material: 14k yellow gold filled. Earrings measurement: 0.75\" long. Other: Hamsa measures approximately 10mm x 8mm.",
+  price: 10,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_3.png")
+)
+
+Item.create!(
+  seller_id: seller_patricia.id,
+  name: "Dainty Rose Gold Necklace",
+  description: "Material: 14k rose gold filled. Chain length: 16\". Other: Center piece measures approximately 20mm x 20mm.",
+  price: 25,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_9.png")
+)
+
+Item.create!(
+  seller_id: seller_patricia.id,
+  name: "Dainty Turqoise Rectangle Necklace",
+  description: "Material: 14k yellow gold filled. Chain length: 16\". Other: Turqoise piece measures approximately 18mm x 18mm.",
+  price: 44,
+  category: "necklace",
+  quantity: 100,
+  image: File.open("app/assets/images/necklace_10.png")
+)
 # image: File.open("app/assets/images/ring-default.jpg")
 # Image.create(image: File.open("app/assets/images/ring-default.jpg"), user_id: user.id)
