@@ -40,8 +40,8 @@ const sessionSignOutLink = (currentUser, signout) => (
         <li>
           <span>{`${currentUser.first_name}`}</span>
         </li>
-        <li className='session-link'>
-          <button onClick={ signout }>Sign Out</button>
+        <li>
+          <button className='session-link' onClick={ signout }>Sign Out</button>
         </li>
       </ul>
     </nav>

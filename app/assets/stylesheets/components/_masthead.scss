@@ -1,3 +1,8 @@
+.masthead {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .masthead-image {
   background-color: $lightest-gray;
   border-bottom: 1px solid $light-gray;
@@ -6,4 +11,18 @@
 .masthead-image > img {
   margin: auto;
   width: 100%;
+}
+
+.masthead-message {
+  position: absolute;
+  padding-top: 75px;
+  padding-right: 400px;
+  font-family: "Palatino";
+  font-size: 50px;
+  font-weight: lighter;
+  color: $light-black;
+}
+
+.masthead-message > li {
+  display: flex;
 }
