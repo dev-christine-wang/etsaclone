@@ -42,23 +42,37 @@ const sessionSignInLinks = signin => (
 
 const sessionSignOutLink = (currentUser, signout) => (
   <header className='top_nav'>
-    <nav className='logo'>
-      <ul>
-        <li>
-          <Link to='/' activeClassName='current'>EtsAClone</Link>
-        </li>
-      </ul>
-    </nav>
-    <nav className='signout-nav'>
-      <ul>
-        <li>
-          <span>{`${currentUser.first_name}`}</span>
-        </li>
-        <li>
-          <button className='session-link' onClick={ signout }>Sign Out</button>
-        </li>
-      </ul>
-    </nav>
+    <div className='top_nav_top'>
+      <nav className='logo'>
+        <ul>
+          <li>
+            <Link to='/' activeClassName='current'>EtsAClone</Link>
+          </li>
+        </ul>
+      </nav>
+      <nav className='signout-nav'>
+        <ul>
+          <li>
+            <span>{`${currentUser.first_name}`}</span>
+          </li>
+          <li>
+            <button className='session-link' onClick={ signout }>Sign Out</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div className='top_nav_bottom'>
+      <nav className='categories'>
+        <ul>
+          <li>
+            <Link to='/items' activeClassName='current'>All Jewelry</Link>
+          </li>
+          <li>Earrings</li>
+          <li>Necklaces</li>
+          <li>Rings</li>
+        </ul>
+      </nav>
+    </div>
 </header>
 );
 
