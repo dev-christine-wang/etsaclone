@@ -108,7 +108,7 @@ class SessionForm extends React.Component {
               <br/>
               <input type='submit' value='Register' />
               <br/>
-              <p>By clicking Register, you agree to EtsAClone's Terms of User and Privacy Policy.</p>
+              <p>By clicking Register, you agree to consider hiring me.</p>
             </div>
           </form>
         </div>
