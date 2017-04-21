@@ -111,7 +111,7 @@ Item.create!(
 
 Item.create!(
   seller_id: seller_tina.id,
-  name: "MM Stacking Ring Set - CV Diamond",
+  name: "MM Stacking Ring Set - CV",
   description: "SET OF 3. Material: 14k yellow gold filled, 14k rose gold filled, sterling silver. Size: US Ring Size 6. Other: 3mm cv diamond, 1 mm band.",
   price: 28,
   category: "ring",
