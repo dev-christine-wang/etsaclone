@@ -30,6 +30,7 @@ const Root = ({ store }) => {
           <IndexRoute components={{ middle: Masthead, bottom: ItemIndexContainer } } />
           <Route path='/register' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/signin' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
+          <Route path='/items' component={ ItemIndexContainer } />
         </Route>
       </Router>
     </Provider>
