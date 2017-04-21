@@ -9,7 +9,7 @@
 
 .items-index {
   margin: auto;
-  width: 15%;
+  padding: 0 50px;
   border-radius: 2px;
   font-family: $sans-serif;
   font-size: 11px;
@@ -17,15 +17,21 @@
 
 .items-index > ul {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .item-index-item {
+  margin: 0 50px 50px 50px;
+  width: 15%;
   border-top: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
   border-bottom: 1.9px solid $dark-gray;
   border-left: 1px solid $light-gray;
   border-radius: 2px;
+}
+
+.item-image {
+  border-bottom: 1px solid $light-gray;
 }
 
 .item-name {

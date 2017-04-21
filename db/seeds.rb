@@ -51,12 +51,42 @@ seller_ruby = User.create!(
 
 Item.create!(
   seller_id: seller_tina.id,
-  name: "Mixed Metal Stacking Ring Set",
-  description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, and sterling silver. Size: US Ring Size 6. Other: 1 mm band",
-  price: 27,
+  name: "Mixed Metal Stacking Ring Set - Simple",
+  description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, sterling silver. Size: US Ring Size 6. Other: 1 mm band.",
+  price: 28,
   category: "ring",
   quantity: 100,
-  image: File.open("app/assets/images/ring-default.jpg")
+  image: File.open("app/assets/images/ring-1.jpg")
+)
+
+Item.create!(
+  seller_id: seller_tina.id,
+  name: "Gold Ring CZ Diamond",
+  description: "Material: 14k yellow gold filled. Size: US Ring Size 6. Other: 3mm cz diamond, 1 mm band.",
+  price: 25,
+  category: "ring",
+  quantity: 100,
+  image: File.open("app/assets/images/ring-2.jpg")
+)
+
+Item.create!(
+  seller_id: seller_tina.id,
+  name: "Silver Ring CZ Diamond",
+  description: "Material: Sterling silver. Size: US Ring Size 6. Other: 3mm cz diamond, 1 mm band.",
+  price: 25,
+  category: "ring",
+  quantity: 100,
+  image: File.open("app/assets/images/ring-3.jpg")
+)
+
+Item.create!(
+  seller_id: seller_tina.id,
+  name: "Mixed Metal Stacking Ring Set - Boho",
+  description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, sterling silver. Size: US Ring Size 6. Other: 4x6mm cz diamond, 1 mm band.",
+  price: 30,
+  category: "ring",
+  quantity: 100,
+  image: File.open("app/assets/images/ring-4.jpg")
 )
 
 # image: File.open("app/assets/images/ring-default.jpg")

@@ -5,7 +5,7 @@ const ItemIndexItem = ({ item }) => {
   return (
     <li className='item-index-item'>
       <ul>
-        <li>
+        <li className='item-image'>
             <Link to={ `/items/${item.id}` }>
               <img src={ item.image } alt={ item.name } />
             </Link>
