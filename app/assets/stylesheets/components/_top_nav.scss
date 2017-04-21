@@ -36,8 +36,18 @@
   margin-right: 0;
 }
 
+.register-link:hover, .demo-link:hover {
+  border-bottom: 1px solid $blue;
+}
+
 .session-link {
-  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 9px;
   border: 1px solid $blue;
   border-radius: 4px;
+}
+
+.session-link:hover {
+  background-color: $lightest-blue;
 }

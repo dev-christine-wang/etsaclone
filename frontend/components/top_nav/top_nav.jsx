@@ -12,13 +12,13 @@ const sessionSignInLinks = signin => (
     </nav>
     <nav className='register-signin-nav'>
       <ul>
-        <li>
+        <li className='register-link'>
           <Link to='/register' activeClassName='current'>Register</Link>
         </li>
-        <li className='session-link'>
-          <Link to='/signin' activeClassName='current'>Sign In</Link>
-        </li>
         <li>
+          <Link className='session-link' to='/signin' activeClassName='current'>Sign In</Link>
+        </li>
+        <li className='demo-link'>
           <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
         </li>
       </ul>
