@@ -1,14 +1,35 @@
 .top_nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 125px;
-  border-bottom: 1px solid $light-gray;
   background-color: white;
 }
+.top_nav_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 128px;
+  border-bottom: 1px solid $light-gray;
+}
 
-.logo > ul, .register-signin-nav > ul, .signout-nav > ul {
+.logo > ul, .register-signin-nav > ul, .signout-nav > ul, .categories > ul {
   display: flex;
   align-items: center;
+}
+
+.top_nav_bottom {
+  padding: 12px 125px;
+  border-bottom: 1px solid $light-gray;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 100;
+  color: $darker-gray-2;
+}
+
+.categories > ul > li {
+  margin-left: 4px;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.categories > ul > li:first-of-type:hover {
+  color: $darkest-gray;
 }
 
 .logo {

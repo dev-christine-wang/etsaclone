@@ -3,26 +3,40 @@ import { Link } from 'react-router';
 
 const sessionSignInLinks = signin => (
   <header className='top_nav'>
-    <nav className='logo'>
-      <ul>
-        <li>
-          <Link to='/' activeClassName='current'>EtsAClone</Link>
-        </li>
-      </ul>
-    </nav>
-    <nav className='register-signin-nav'>
-      <ul>
-        <li className='register-link'>
-          <Link to='/register' activeClassName='current'>Register</Link>
-        </li>
-        <li>
-          <Link className='session-link' to='/signin' activeClassName='current'>Sign In</Link>
-        </li>
-        <li className='demo-link'>
-          <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
-        </li>
-      </ul>
-    </nav>
+    <div className='top_nav_top'>
+      <nav className='logo'>
+        <ul>
+          <li>
+            <Link to='/' activeClassName='current'>EtsAClone</Link>
+          </li>
+        </ul>
+      </nav>
+      <nav className='register-signin-nav'>
+        <ul>
+          <li className='register-link'>
+            <Link to='/register' activeClassName='current'>Register</Link>
+          </li>
+          <li>
+            <Link className='session-link' to='/signin' activeClassName='current'>Sign In</Link>
+          </li>
+          <li className='demo-link'>
+            <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div className='top_nav_bottom'>
+      <nav className='categories'>
+        <ul>
+          <li>
+            <Link to='/items' activeClassName='current'>All Jewelry</Link>
+          </li>
+          <li>Earrings</li>
+          <li>Necklaces</li>
+          <li>Rings</li>
+        </ul>
+      </nav>
+    </div>
   </header>
 );
 
