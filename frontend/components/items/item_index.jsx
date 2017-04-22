@@ -44,5 +44,3 @@ class ItemIndex extends Component {
 }
 
 export default ItemIndex;
-
-// ownProps.location.pathname.slice(1)

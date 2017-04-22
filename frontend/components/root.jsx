@@ -6,6 +6,7 @@ import App from './app';
 import Masthead from './masthead/masthead';
 import ItemIndexContainer from './items/item_index_container';
 import SessionFormContainer from './session_form/session_form_container';
+import ItemShowContainer from './items/item_show_container';
 
 const Root = ({ store }) => {
   const _ensureSignedIn = (nextState, replace) => {
@@ -31,6 +32,7 @@ const Root = ({ store }) => {
           <Route path='/register' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/signin' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/items' component={ ItemIndexContainer } />
+          <Route path='/items/:itemId' component={ ItemShowContainer } />
         </Route>
       </Router>
     </Provider>
