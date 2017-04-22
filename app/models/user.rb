@@ -26,7 +26,8 @@ class User < ApplicationRecord
   before_validation :ensure_session_token_uniqueness
 
   has_many :items
-
+  has_many :carts
+  
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)
     @password = password
