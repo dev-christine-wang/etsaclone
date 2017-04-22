@@ -9,6 +9,14 @@
 User.delete_all
 Item.delete_all
 
+User.create!(
+  first_name: 'Demo',
+  last_name: 'User',
+  email: 'demouser@gmail.com',
+  password: 'password',
+  seller: false
+)
+
 seller_tina = User.create!(
               first_name: 'Tina',
               last_name: 'Williams',

@@ -20,7 +20,7 @@ const sessionSignInLinks = signin => (
             <Link className='session-link' to='/signin' activeClassName='current'>Sign In</Link>
           </li>
           <li className='demo-link'>
-            <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demo@gmail.com', password: 'password' })}>Demo</button>
+            <button onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demouser@gmail.com', password: 'password' })}>Demo</button>
           </li>
         </ul>
       </nav>
