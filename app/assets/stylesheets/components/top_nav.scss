@@ -14,22 +14,27 @@
 }
 
 .top_nav_bottom {
-  padding: 12px 125px;
+  padding: 14.5px 125px;
   border-bottom: 1px solid $light-gray;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: 100;
-  color: $darker-gray-2;
 }
 
 .categories > ul > li {
   margin-left: 4px;
   margin-right: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 100;
+  color: $darker-gray-2;
+}
+
+.all-jewelry {
+  padding: 12px 0;
   transition: color 0.3s;
 }
 
-.categories > ul > li:first-of-type:hover {
+.all-jewelry:hover {
   color: $darkest-gray;
+  border-bottom: 3px solid $dark-orange;
 }
 
 .logo {

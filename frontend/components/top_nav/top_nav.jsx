@@ -29,7 +29,7 @@ const sessionSignInLinks = signin => (
       <nav className='categories'>
         <ul>
           <li>
-            <Link to='/items' activeClassName='current'>All Jewelry</Link>
+            <Link className='all-jewelry' to='/items' activeClassName='current'>All Jewelry</Link>
           </li>
           <li>Earrings</li>
           <li>Necklaces</li>
