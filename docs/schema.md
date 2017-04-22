@@ -31,13 +31,13 @@
 
 ## carts
 
-| column name     | data type | details                                                        |
-|:----------------|:---------:|:---------------------------------------------------------------|
-| id              | integer   | not null, primary key                                          |
-| user_id         | integer   | not null                                                       |
-| purchased       | boolean   | not null, default false, user can only have one purchased cart |
-| created_at      | datetime  | not null                                                       |
-| updated_at      | datetime  | not null                                                       |  
+| column name     | data type | details                                                            |
+|:----------------|:---------:|:-------------------------------------------------------------------|
+| id              | integer   | not null, primary key                                              |
+| user_id         | integer   | not null                                                           |
+| purchased       | boolean   | not null, default false, user can only have one not purchased cart |
+| created_at      | datetime  | not null                                                           |
+| updated_at      | datetime  | not null                                                           |  
 
 ## cart_items
 
