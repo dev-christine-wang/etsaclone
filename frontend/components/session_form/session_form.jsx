@@ -4,16 +4,18 @@ import { Link, withRouter } from 'react-router';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       first_name: '',
       last_name: '',
       email: '',
       password: ''
     };
+
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     this.props.clearSessionErrors();
   }
 

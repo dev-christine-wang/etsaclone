@@ -19,4 +19,8 @@ class CartItem < ApplicationRecord
   has_one :user,
     through: :cart,
     source: :user
+
+  has_one :seller,
+    through: :item,
+    source: :seller
 end

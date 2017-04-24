@@ -2,12 +2,12 @@ import React from 'react';
 
 import TopNavContainer from './top_nav/top_nav_container';
 
-const App = ({ children, middle, bottom }) => (
+const App = ({ children, first, second }) => (
   <div>
     <TopNavContainer />
     { children }
-    { middle }
-    { bottom }
+    { first }
+    { second }
   </div>
 );
 
