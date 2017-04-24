@@ -1,3 +1,28 @@
+.cart-items-container {
+  position: relative;
+  margin: 40px auto;
+  width: 928px;
+  height: auto;
+  font-family: sans-serif;
+  border: 1px solid red;
+}
+
+.cart-items {
+  margin: auto;
+  width: 100%;
+}
 .cart-items > li {
   display: flex;
+}
+
+.cart-item > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-image {
+  margin-left: 20px;
+  width: 155px;
+  height: 155px;
 }

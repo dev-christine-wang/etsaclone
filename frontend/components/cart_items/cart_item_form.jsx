@@ -16,6 +16,7 @@ class CartItemForm extends React.Component {
   }
 
   componentDidMount() {
+    this.props.fetchCarts();
     this.props.fetchCartItems();
   }
 
@@ -27,7 +28,9 @@ class CartItemForm extends React.Component {
     e.preventDefault();
     this.redirectIfNotLoggedIn();
 
-    const cartId = this.props.cartItems[0].cart_id;
+    const carts = this.props.carts;
+    const cart = carts[carts.length - 1];
+    const cartId = cart.id;
     const cartItem = {
       cart_id: cartId,
       item_id: parseInt(this.props.params.itemId),
@@ -66,7 +69,7 @@ class CartItemForm extends React.Component {
         </form>
       );
     } else {
-      return '';
+      return null;
     }
   }
 }

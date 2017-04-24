@@ -2,7 +2,6 @@ json.extract! cart_item, :cart_id, :item_id, :item_quantity
 
 json.cart_item_id cart_item.id
 
-
 json.item_seller do
   json.extract! cart_item.item.seller, :first_name, :last_name
 end
