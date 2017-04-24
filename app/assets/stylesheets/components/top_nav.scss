@@ -13,6 +13,21 @@
   align-items: center;
 }
 
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-shopping-cart {
+  padding-left: 3px;
+  color: #777;
+}
+
+.cart-icon-label {
+  color: #777;
+}
+
 .top_nav_bottom {
   padding: 14.5px 125px;
   border-bottom: 1px solid $light-gray;
@@ -59,10 +74,11 @@
   margin-right: 0;
 }
 
-.signout-nav > ul >li:last-of-type {
+.signout-nav > ul > li:last-of-type {
+  padding-left: 20px;
   margin-right: 0;
+  border-left: 1px solid $light-gray;
 }
-
 .register-link:hover, .demo-link:hover {
   border-bottom: 1px solid $blue;
 }

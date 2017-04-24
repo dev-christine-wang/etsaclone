@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+const FontAwesome = require('react-fontawesome');
 
 const sessionSignInLinks = signin => (
   <header className='top_nav'>
@@ -57,6 +58,12 @@ const sessionSignOutLink = (currentUser, signout) => (
           </li>
           <li>
             <button className='session-link' onClick={ signout }>Sign Out</button>
+          </li>
+          <li classname='cart'>
+            <Link to='/cart' activeClassName='current'>
+              <FontAwesome className='fa-shopping-cart' aria-hidden='true' />
+              <li className='cart-icon-label'>Cart</li>
+            </Link>
           </li>
         </ul>
       </nav>
