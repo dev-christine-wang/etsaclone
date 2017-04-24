@@ -53,14 +53,17 @@ const sessionSignOutLink = (currentUser, signout) => (
       </nav>
       <nav className='signout-nav'>
         <ul>
-          <li>
-            <span>{`${currentUser.first_name}`}</span>
+          <li className='user'>
+            <li>
+              <FontAwesome className='fa-user-circle-o' aria-hidden='true' />
+            </li>
+            <li>{`${currentUser.first_name}`}</li>
           </li>
           <li>
             <button className='session-link' onClick={ signout }>Sign Out</button>
           </li>
-          <li classname='cart'>
-            <Link to='/cart' activeClassName='current'>
+          <li className='cart'>
+            <Link className='cart-link' to='/cart' activeClassName='current'>
               <FontAwesome className='fa-shopping-cart' aria-hidden='true' />
               <li className='cart-icon-label'>Cart</li>
             </Link>

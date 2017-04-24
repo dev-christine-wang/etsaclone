@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.user > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $darker-gray-2;
+}
 .cart {
   display: flex;
   justify-content: center;
@@ -21,11 +27,11 @@
 
 .fa-shopping-cart {
   padding-left: 3px;
-  color: #777;
+  color: $darker-gray-2;
 }
 
 .cart-icon-label {
-  color: #777;
+  color: $darker-gray-2;
 }
 
 .top_nav_bottom {
