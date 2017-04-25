@@ -53,8 +53,8 @@ class CartItemsIndex extends Component {
                 <li>{`Item(s) total:`}</li>
                 <li className='amount'>{ `$${totalPrice}.00` }</li>
               </ul>
-              <form className='purchase-button' onSubmit={this.handleSubmit}>
-                <input type='submit' value='Make a purchase' />
+              <form onSubmit={this.handleSubmit}>
+                <input className='purchase-button' type='submit' value='Make a purchase' />
               </form>
             </div>
           </div>
