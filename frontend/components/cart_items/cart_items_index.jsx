@@ -44,7 +44,7 @@ class CartItemsIndex extends Component {
           <h2>{`${cartItems.length} item(s) in your cart`}</h2>
           <div>
             <ul className='cart-items'>
-              { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } />)}
+              { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } deleteCartItem={ this.props.deleteCartItem } fetchCartItems={ this.props.fetchCartItems }/>)}
             </ul>
           </div>
           <div>

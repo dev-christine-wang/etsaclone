@@ -20,3 +20,10 @@ export const updateCartItem = cartItem => {
     data: { cart_item: cartItem}
   });
 };
+
+export const deleteCartItem = id => {
+  return $.ajax({
+    method: 'DELETE',
+    url: `api/cart_items/${id}`
+  });
+};
