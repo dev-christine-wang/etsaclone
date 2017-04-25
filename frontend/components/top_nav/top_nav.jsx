@@ -64,10 +64,14 @@ const sessionSignOutLink = (currentUser, signout) => (
           <li>
             <button className='session-link' onClick={ signout }>Sign Out</button>
           </li>
-          <li className='cart'>
+          <li>
             <Link className='cart-link' to='/cart' activeClassName='current'>
-              <FontAwesome className='fa-shopping-cart' name='fa-shopping-cart' aria-hidden='true' />
-              <div className='cart-icon-label'>Cart</div>
+              <ul className='cart'>
+                <li>
+                  <FontAwesome className='fa-shopping-cart' name='fa-shopping-cart' aria-hidden='true' />
+                </li>
+                <li>Cart</li>
+              </ul>
             </Link>
           </li>
         </ul>

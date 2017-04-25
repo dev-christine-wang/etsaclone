@@ -13,22 +13,16 @@
   align-items: center;
 }
 
-.fa-user-circle-o {
-  padding-left: 12px;
+.user > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cart {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.fa-shopping-cart {
-  padding-left: 4px;
-  color: $darker-gray-2;
-}
-
-.cart-icon-label {
+  flex-direction: column;
   color: $darker-gray-2;
 }
 
