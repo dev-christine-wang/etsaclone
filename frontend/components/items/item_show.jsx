@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import CartItemFormContainer from '../cart_items/cart_item_form_container';
 
 class ItemShow extends Component {
   componentDidMount() {
@@ -21,6 +22,7 @@ class ItemShow extends Component {
               <li className='item-show-seller'>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
               <li className='item-show-price'>{ `$${item.price}.00` }</li>
               <li className='overview'></li>
+              <CartItemFormContainer />
               <li>{ item.description }</li>
             </ul>
           </div>
