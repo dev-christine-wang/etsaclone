@@ -48,6 +48,7 @@
 .all-jewelry:hover {
   color: $darkest-gray;
   border-bottom: 3px solid $dark-orange;
+  transition: border-bottom 0.1s;
 }
 
 .logo {
@@ -79,6 +80,7 @@
 }
 .register-link:hover, .demo-link:hover {
   border-bottom: 1px solid $blue;
+  transition: border-bottom 0.3s;
 }
 
 .session-link {
@@ -89,4 +91,5 @@
 
 .session-link:hover {
   background-color: $lightest-blue;
+  transition: background-color 0.3s;
 }
