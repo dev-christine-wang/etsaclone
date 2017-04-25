@@ -44,7 +44,7 @@ class CartItemsIndexItem extends React.Component {
             <li className='cart-item-seller'>
               { `${this.props.cartItem.item_seller.first_name} ${this.props.cartItem.item_seller.last_name}` }
             </li>
-            <li>
+            <li className='remove-button'>
               <button onClick={this.handleClick}>
                 <input type='submit' value='Remove' />
               </button>

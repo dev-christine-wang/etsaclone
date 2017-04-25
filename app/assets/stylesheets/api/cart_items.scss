@@ -1,9 +1,23 @@
 .cart-items-container {
-  margin: 40px auto;
-  width: 928px;
+  margin: 45px auto;
+  width: 879px;
   height: auto;
+  position: relative;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  background-color: white;
   font-family: sans-serif;
-  border: 1px solid red;
+}
+
+.cart-items-container > h2 {
+  margin: 32px 0 32px 32px;
+  font-size: 22px;
+  color: $light-black;
+}
+
+.cart-items-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cart-items {
@@ -12,18 +26,76 @@
 }
 .cart-items > li {
   display: flex;
+  margin-bottom: 32px;
 }
 
-.cart-item > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.cart-item {
+  font-size: 14.5px;
+  color: $darkest-gray;
 }
 
 .cart-item-image {
-  margin-left: 20px;
   width: 155px;
   height: 155px;
+  margin-left: 32px;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.cart-item-details > li {
+  display: flex;
+}
+
+.cart-item-name {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cart-item-seller {
+  margin-bottom: 16px;
+}
+
+.cart-item-quantity {
+  position: absolute;
+  left: 511px;
+}
+
+.cart-item-price {
+  position: absolute;
+  left: 584px;
+}
+
+.cart-details-flex-right {
+  border-left: 1px solid $light-gray;
+  margin-bottom: 32px;
+}
+
+.items-total {
+  display: flex;
+  margin: 0 32px 16px 32px;
+  font-size: 16px;
+  color: $darkest-gray;
+}
+
+.amount {
+  margin-left: 6px;
+}
+
+.purchase-button {
+  margin: 0 32px;
+  width: 151px;
+  text-align: center;
+  padding: 8px 0;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  background-color: $green;
+  color: white;
 }
 
 .cart-item-form {
@@ -34,14 +106,14 @@
   color: $darkest-gray;
 }
 
-.submit-button {
+.add-to-cart-button {
   margin-top: 24px;
   padding: 8px 0;
   width: 480%;
   text-align: center;
   border: 1px solid $light-gray;
   border-radius: 4px;
-  background-color: #89c448;
+  background-color: $green;
   font-size: 16px;
   color: white;
 }

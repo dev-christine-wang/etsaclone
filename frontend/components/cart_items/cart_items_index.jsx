@@ -42,21 +42,21 @@ class CartItemsIndex extends Component {
       return (
         <div className='cart-items-container'>
           <h2>{`${cartItems.length} item(s) in your cart`}</h2>
-          <div>
-            <ul className='cart-items'>
-              { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } deleteCartItem={ this.props.deleteCartItem } fetchCartItems={ this.props.fetchCartItems }/>)}
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Item(s) total</li>
-              <li>{ `$${totalPrice}.00` }</li>
-            </ul>
-          </div>
-          <div>
-            <form onSubmit={this.handleSubmit}>
-              <input type='submit' value='Make a purchase' />
-            </form>
+          <div className='cart-items-box'>
+            <div>
+              <ul className='cart-items'>
+                { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } deleteCartItem={ this.props.deleteCartItem } fetchCartItems={ this.props.fetchCartItems }/>)}
+              </ul>
+            </div>
+            <div className='cart-details-flex-right'>
+              <ul className='items-total'>
+                <li>{`Item(s) total:`}</li>
+                <li className='amount'>{ `$${totalPrice}.00` }</li>
+              </ul>
+              <form className='purchase-button' onSubmit={this.handleSubmit}>
+                <input type='submit' value='Make a purchase' />
+              </form>
+            </div>
           </div>
         </div>
       );

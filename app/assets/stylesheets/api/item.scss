@@ -36,6 +36,7 @@
   font-family: $serif;
   font-size: 22px;
   font-weight: 400;
+  color: $light-black;
 }
 
 .item-show-details > ul > li {
@@ -46,9 +47,14 @@
   color: $darkest-gray;
 }
 
+.remove-button {
+  color: $blue;
+}
+
 .item-show-price {
   font-size: 18px;
   font-weight: bold;
+  color: $light-black;
 }
 
 .overview {
