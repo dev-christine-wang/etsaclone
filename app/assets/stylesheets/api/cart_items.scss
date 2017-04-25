@@ -98,6 +98,10 @@
   color: white;
 }
 
+.purchase-button:hover {
+  background-color: $light-green;
+}
+
 .cart-item-form {
   position: absolute;
   margin-top: -140px;
@@ -116,4 +120,8 @@
   background-color: $green;
   font-size: 16px;
   color: white;
+}
+
+.add-to-cart-button:hover {
+  background-color: $light-green;
 }
