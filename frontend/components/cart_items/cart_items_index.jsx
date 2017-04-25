@@ -17,13 +17,11 @@ class CartItemsIndex extends Component {
       );
     } else {
       return (
-        <div>
-          <div className='cart-items-container'>
-            <h2>{`${cartItems.length} item(s) in your cart`}</h2>
-            <ul className='cart-items'>
-              { cartItems.map(cartItem => <CartItemsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
-            </ul>
-          </div>
+        <div className='cart-items-container'>
+          <h2>{`${cartItems.length} item(s) in your cart`}</h2>
+          <ul className='cart-items'>
+            { cartItems.map(cartItem => <CartItemsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
+          </ul>
         </div>
       );
     }
