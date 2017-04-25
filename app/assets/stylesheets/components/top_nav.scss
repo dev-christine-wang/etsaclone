@@ -13,11 +13,8 @@
   align-items: center;
 }
 
-.user > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $darker-gray-2;
+.fa-user-circle-o {
+  padding-left: 12px;
 }
 .cart {
   display: flex;
@@ -26,7 +23,7 @@
 }
 
 .fa-shopping-cart {
-  padding-left: 3px;
+  padding-left: 4px;
   color: $darker-gray-2;
 }
 
