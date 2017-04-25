@@ -10,12 +10,13 @@ class CartsIndex extends Component {
 
   render() {
     let cartItems = [];
-    carts.forEach(cart => cartItems.push(cart.cart_items));
+    this.props.carts.forEach(cart => cartItems.push(cart.cart_items));
+    cartItems = [].concat.apply([], cartItems);
 
     return (
       <div>
         <ul>
-          { cartItems.map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
+          { cartItems.reverse().map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
         </ul>
       </div>
     );

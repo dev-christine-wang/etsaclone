@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
 
 import CartItemsIndexItem from './cart_items_index_item';
 
 class CartItemsIndex extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.createNewCart = this.createNewCart.bind(this);
+    this.navigateToPurchasedItems = this.navigateToPurchasedItems.bind(this);
+  }
+
   componentDidMount() {
     this.props.fetchCartItems();
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.updateCart({id: this.props.cartItems[0].cart_id, purchased: true}).then(this.createNewCart).then(this.navigateToPurchasedItems);
+  }
+
+  createNewCart() {
+    this.props.createCart({ user_id: this.props.currentUser.id });
+  }
+
+  navigateToPurchasedItems() {
+    this.props.router.push('/purchased_items');
   }
 
   render() {
@@ -32,10 +53,15 @@ class CartItemsIndex extends Component {
               <li>{ `$${totalPrice}.00` }</li>
             </ul>
           </div>
+          <div>
+            <form onSubmit={this.handleSubmit}>
+              <input type='submit' value='Make a purchase' />
+            </form>
+          </div>
         </div>
       );
     }
   }
 }
 
-export default CartItemsIndex;
+export default withRouter(CartItemsIndex);
