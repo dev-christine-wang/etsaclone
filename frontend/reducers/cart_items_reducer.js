@@ -7,7 +7,7 @@ const CartItemsReducer = (state = {}, action) => {
 
   switch(action.type) {
     case RECEIVE_CART_ITEM:
-      const newCartItem = { [action.cartItem.id]: action.cartItem };
+      const newCartItem = { [action.cartItem.cart_item_id]: action.cartItem };
       return merge({}, state, newCartItem);
     case RECEIVE_CART_ITEMS:
       return action.cartItems;

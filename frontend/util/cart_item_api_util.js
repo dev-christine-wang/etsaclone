@@ -12,3 +12,11 @@ export const fetchCartItems = () => {
     url: 'api/cart_items'
   });
 };
+
+export const updateCartItem = cartItem => {
+  return $.ajax({
+    method: 'PATCH',
+    url: `api/cart_items/${cartItem.cart_item_id}`,
+    data: { cart_item: cartItem}
+  });
+};

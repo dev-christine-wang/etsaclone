@@ -20,3 +20,7 @@ export const addCartItem = cartItem => dispatch => (
 export const fetchCartItems = () => dispatch => (
   APIUtil.fetchCartItems().then(cartItems => dispatch(receiveCartItems(cartItems)))
 );
+
+export const updateCartItem = cartItem => dispatch => (
+  APIUtil.updateCartItem(cartItem).then(cartItem => dispatch(receiveCartItem(cartItem)))
+);

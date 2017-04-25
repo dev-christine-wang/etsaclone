@@ -10,6 +10,8 @@ class CartItemsIndex extends Component {
 
   render() {
     const cartItems = this.props.cartItems;
+    let totalPrice = 0;
+    cartItems.map(cartItem => totalPrice += (cartItem.item_price * cartItem.item_quantity));
 
     if (cartItems.length === 0) {
       return (
@@ -19,9 +21,17 @@ class CartItemsIndex extends Component {
       return (
         <div className='cart-items-container'>
           <h2>{`${cartItems.length} item(s) in your cart`}</h2>
-          <ul className='cart-items'>
-            { cartItems.map(cartItem => <CartItemsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
-          </ul>
+          <div>
+            <ul className='cart-items'>
+              { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } />)}
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Item(s) total</li>
+              <li>{ `$${totalPrice}.00` }</li>
+            </ul>
+          </div>
         </div>
       );
     }

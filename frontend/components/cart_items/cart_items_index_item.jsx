@@ -8,10 +8,13 @@ class CartItemsIndexItem extends React.Component {
     this.state = {
       value: this.props.cartItem.item_quantity
     };
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
     this.setState({value: e.target.value});
+    this.props.updateCartItem({ id: this.props.cartItem.cart_item_id, cart_id: this.props.cartItem.cart_id, item_id: this.props.cartItem.item_id, item_quantity: e.target.value});
   }
 
   render() {
