@@ -52,29 +52,25 @@ class CartItemForm extends React.Component {
   }
 
   render() {
-    if (this.props.currentUser) {
-      return (
-        <form className='cart-item-form' onSubmit={this.handleSubmit}>
-          <ul>
-            <li>Quantity</li>
-            <li>
-              <select value={this.state.value} onChange={this.handleChange}>
-                <option value='1'>1</option>
-                <option value='2'>2</option>
-                <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-              </select>
-            </li>
-            <li>
-              <input className='submit-button' type='submit' value='Add to cart' />
-            </li>
-          </ul>
-        </form>
-      );
-    } else {
-      return null;
-    }
+    return (
+      <form className='cart-item-form' onSubmit={this.handleSubmit}>
+        <ul>
+          <li>Quantity</li>
+          <li>
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+              <option value='4'>4</option>
+              <option value='5'>5</option>
+            </select>
+          </li>
+          <li>
+            <input className='submit-button' type='submit' value='Add to cart' />
+          </li>
+        </ul>
+      </form>
+    );
   }
 }
 
