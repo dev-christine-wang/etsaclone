@@ -1,7 +1,7 @@
 .item-show {
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin: 45px auto;
   width: 928px;
   height: auto;
   background-color: white;
@@ -27,19 +27,19 @@
 
 .item-show-details {
   margin: 30px;
-  width: 395px;
+  width: 387px;
   height: auto;
 }
 
 .item-show-details > ul > li:first-child {
-  margin-top: 12%;
+  margin-top: 60px;
   font-family: $serif;
   font-size: 22px;
   font-weight: 400;
 }
 
 .item-show-details > ul > li {
-  padding: 0 0 4% 0;
+  padding: 0 0 20px 0;
 }
 
 .item-show-seller {
@@ -51,6 +51,13 @@
   font-weight: bold;
 }
 
+.overview {
+  margin-top: 118px;
+  padding-top: 500px;
+  border-top: 1px solid $light-gray;
+}
+
 .item-show-details > ul > li:last-child {
+  margin-top: 5px;
   color: $darkest-gray;
 }

@@ -67,7 +67,7 @@ class CartItemForm extends React.Component {
               </select>
             </li>
             <li>
-              <input type='submit' value='Add to cart' />
+              <input className='submit-button' type='submit' value='Add to cart' />
             </li>
           </ul>
         </form>

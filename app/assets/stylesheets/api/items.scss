@@ -1,5 +1,14 @@
-.section-description {
+.section-description-preview {
   margin: 40px auto 20px auto;
+  width: 100%;
+  text-align: center;
+  font-family: $sans-serif;
+  font-size: 1.6vw;
+  color: $light-black;
+}
+
+.section-description-all {
+  margin: 0 auto 20px auto;
   width: 100%;
   text-align: center;
   font-family: $sans-serif;

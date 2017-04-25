@@ -20,6 +20,7 @@ class ItemShow extends Component {
               <li>{ item.name }</li>
               <li className='item-show-seller'>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
               <li className='item-show-price'>{ `$${item.price}.00` }</li>
+              <li className='overview'></li>
               <li>{ item.description }</li>
             </ul>
           </div>

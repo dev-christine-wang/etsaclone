@@ -13,7 +13,7 @@ class ItemIndex extends Component {
 
     if (this.props.location.pathname.slice(1) === 'items') {
       return (
-        <section className='section-description'>
+        <section className='section-description-all'>
           <h2 className='all-items'>All Jewelry</h2>
           <div className='items-index'>
             <ul>
@@ -27,7 +27,7 @@ class ItemIndex extends Component {
 
       return (
         <section>
-          <h2 className='section-description'>
+          <h2 className='section-description-preview'>
             <Link to='/items' activeClassName='current'>
               Browse our latest handmade goods
             </Link>
