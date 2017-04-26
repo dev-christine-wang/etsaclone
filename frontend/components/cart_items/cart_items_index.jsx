@@ -36,7 +36,12 @@ class CartItemsIndex extends Component {
 
     if (cartItems.length === 0) {
       return (
-        <h2>Cart Empty</h2>
+        <div className='cart-items-container'>
+          <div className='cart-items-top'>
+            <h2>Cart Empty</h2>
+            <Link className='keep-shopping-button-empty' to={`/items`}>Keep shopping</Link>
+          </div>
+        </div>
       );
     } else {
       return (

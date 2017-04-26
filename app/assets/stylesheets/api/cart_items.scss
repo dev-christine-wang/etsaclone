@@ -38,6 +38,18 @@
   transition: background-color 0.3s;
 }
 
+.keep-shopping-button-empty {
+  margin-right: 34px;
+  width: 120px;
+  text-align: center;
+  padding: 6px 0;
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  background-color: $light-blue;
+  color: white;
+  font-size: 14px;
+}
+
 .cart-items-box {
   display: flex;
   justify-content: space-between;
