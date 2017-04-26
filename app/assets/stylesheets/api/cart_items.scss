@@ -50,6 +50,11 @@
   font-size: 14px;
 }
 
+.keep-shopping-button-empty:hover {
+  background-color: $lighter-blue;
+  transition: background-color 0.3s;
+}
+
 .cart-items-box {
   display: flex;
   justify-content: space-between;
