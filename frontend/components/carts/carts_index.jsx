@@ -16,7 +16,7 @@ class CartsIndex extends Component {
     return (
       <div className='cart-items-container'>
         <div className='cart-items-top'>
-          <h2>Purchased items</h2>
+          <h2>Purchases</h2>
         </div>
         <div className='cart-items-box'>
           <div>
