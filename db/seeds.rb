@@ -251,10 +251,80 @@ Item.create!(
 
 Item.create!(
   seller_id: seller_patricia.id,
-  name: "Dainty Turqoise Rectangle Necklace",
+  name: "Dainty Turquoise Rectangle Necklace",
   description: "Material: 14k yellow gold filled. Chain length: 16\". Other: Turqoise piece measures approximately 18mm x 18mm.",
   price: 44,
   category: "necklace",
   quantity: 100,
   image: File.open("app/assets/images/necklace_10.png")
+)
+
+Item.create!(
+  seller_id: seller_patricia.id,
+  name: "Gold Leaf Earrings",
+  description: "Material: 14k yellow gold filled. Earrings measurement: 20mm x 18mm. Other: Bar post measures 10mm x 2mm.",
+  price: 15,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_4.png")
+)
+
+Item.create!(
+  seller_id: seller_patricia.id,
+  name: "Gold Eye Earrings",
+  description: "Material: 14k yellow gold filled, cz diamond. Earrings measurement: 20mm x 12mm.",
+  price: 15,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_5.png")
+)
+
+Item.create!(
+  seller_id: seller_patricia.id,
+  name: "Gold Turquoise Earrings",
+  description: "Material: 14k yellow gold filled, turquoise howlite. Earrings measurement: 40mm x 6mm.",
+  price: 13,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_6.png")
+)
+
+Item.create!(
+  seller_id: seller_ruby.id,
+  name: "Aztec Boho Ear Cuff Earrings",
+  description: "SET OF 3. Material: 14k yellow gold filled, 14k rose gold filled, 14k white gold filled. Earrings measurement: 25mm x 6mm.",
+  price: 55,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_7.png")
+)
+
+Item.create!(
+  seller_id: seller_ruby.id,
+  name: "Pin Ear Cuff Earrings",
+  description: "SET OF 4. Material: 14k yellow gold filled, 14k rose gold filled, 14k white gold filled, sterling silver. Earrings measurement: 25mm x 6mm.",
+  price: 60,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_8.png")
+)
+
+Item.create!(
+  seller_id: seller_ruby.id,
+  name: "Rose Stud Earrings",
+  description: "Material: Sterling silver. Earrings measurement: 20mm x 20mm. Other: Handmade by expert craftsman and inspected for quality.",
+  price: 20,
+  category: "earrings",
+  quantity: 100,
+  image: File.open("app/assets/images/earrings_9.png")
+)
+
+Item.create!(
+  seller_id: seller_ruby.id,
+  name: "Sterling Silver Knot Ring",
+  description: "Material: Sterling silver. Size: US Ring Size 6. Other: Handmade by expert craftsman and inspected for quality.",
+  price: 12,
+  category: "ring",
+  quantity: 100,
+  image: File.open("app/assets/images/ring_9.png")
 )
