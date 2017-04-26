@@ -17,6 +17,7 @@ class CartsIndex extends Component {
       <div className='cart-items-container'>
         <div className='cart-items-top'>
           <h2>Purchases</h2>
+          <Link className='keep-shopping-button-empty' to={`/items`}>Keep shopping</Link>
         </div>
         <div className='cart-items-box'>
           <div>
