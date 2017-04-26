@@ -74,6 +74,16 @@ const sessionSignOutLink = (currentUser, signout) => (
               </ul>
             </Link>
           </li>
+          <li>
+            <Link to='/purchased_items' activeClassName='current'>
+              <ul className='purchases'>
+                <li>
+                  <FontAwesome className='fa-credit-card-alt' name='fa-credit-card-alt' aria-hidden='true' />
+                </li>
+                <li>Purchases</li>
+              </ul>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

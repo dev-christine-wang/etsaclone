@@ -23,6 +23,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-left: 20px;
+  border-left: 1px solid $light-gray;
+  color: $darker-gray-2;
+}
+
+.purchases {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   color: $darker-gray-2;
 }
 
@@ -74,10 +83,9 @@
 }
 
 .signout-nav > ul > li:last-of-type {
-  padding-left: 20px;
   margin-right: 0;
-  border-left: 1px solid $light-gray;
 }
+
 .register-link:hover, .demo-link:hover {
   border-bottom: 1px solid $blue;
   transition: border-bottom 0.3s;
