@@ -1,13 +1,17 @@
+.reviews-section {
+  color: $light-black;
+}
+
 .star {
-  color: $orange;
   margin-bottom: 10px;
+  color: $orange;
 }
 
 .review-description {
   border: 1px solid $light-gray;
   border-radius: 4px;
   width: 210px;
-  height: 54px;
+  height: 51px;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 12px;
@@ -23,7 +27,7 @@
 }
 
 .review-header {
-  margin: 34px 0 17px 0;
+  padding: 29px 17px 26px 0;
   font-size: 22px;
   color: $light-black;
 }
@@ -34,4 +38,56 @@
 
 .reviews > li:last-child {
   margin-bottom: 0;
+}
+
+.avg-rating {
+  display: flex;
+  align-items: center;
+}
+
+.avg-stars {
+  margin-right: 4.25px;
+  padding-top: 1px;
+  color: $orange;
+}
+
+.rating-count {
+  padding-top: 1px;
+}
+
+.review {
+  display: flex;
+  position: relative;
+  margin-left: 34px;
+  color: $light-black;
+}
+
+.reviewer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.reviewer > li:last-child {
+  color: $blue;
+}
+
+.user-icon {
+  margin-bottom: 6px;
+  color: $dark-gray;
+  font-size: 38px;
+}
+
+.reviewed-by, .reviewer-review-date {
+  color: $darker-gray-2;
+  font-size: 12px;
+}
+
+.reviewer-review {
+  position: absolute;
+  margin-left: 150px;
+}
+
+.reviewer-review-date {
+  position: absolute;
+  margin-left: 300px;
 }

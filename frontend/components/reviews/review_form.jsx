@@ -52,10 +52,10 @@ class ReviewForm extends React.Component {
             <Rating
               empty='fa fa-star-o fa-1x'
               full='fa fa-star fa-1x'
+              placeholder='fa fa-star fa-1x'
+              placeholderRate={this.state.rating}
               start={ 0 }
               end={ 5 }
-              placeholder="fa fa-star fa-1x"
-              placeholderRate={this.state.rating}
               onChange={rate => this.handleRate(rate)}
             />
           </li>
@@ -71,7 +71,7 @@ class ReviewForm extends React.Component {
             <input
               className='submit-button'
               type='submit'
-              value='Add review'
+              value='Submit review'
             />
           </li>
         </ul>
