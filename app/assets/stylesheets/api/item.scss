@@ -1,8 +1,8 @@
 .item-show {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: 45px auto;
-  width: 928px;
+  width: 936px;
   height: auto;
   background-color: white;
   border-radius: 4px;
@@ -11,14 +11,14 @@
   font-size: 14.5px;
 }
 
-.item-show > div {
+.item-show-top {
   display: inline-flex;
 }
 
 .item-show-image {
   display: flex;
   justify-content: center;
-  margin: 30px 0 30px 30px;
+  margin: 34px 0 34px 34px;
   width: 450px;
   height: 450px;
   border: 1px solid $light-gray;
@@ -26,9 +26,13 @@
 }
 
 .item-show-details {
-  margin: 30px;
-  width: 387px;
+  margin: 34px;
+  width: 383px;
   height: auto;
+}
+
+.item-reviews {
+  margin: 0 34px 34px 34px;
 }
 
 .item-show-details > ul > li:first-child {

@@ -1,0 +1,37 @@
+.star {
+  color: $orange;
+  margin-bottom: 10px;
+}
+
+.review-description {
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  width: 210px;
+  height: 54px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.submit-button {
+  color: $blue;
+}
+
+.item-reviews {
+  width: 870px;
+  border-top: 1px solid $light-gray;
+}
+
+.review-header {
+  margin: 34px 0 17px 0;
+  font-size: 22px;
+  color: $light-black;
+}
+
+.reviews > li {
+  margin-bottom: 17px;
+}
+
+.reviews > li:last-child {
+  margin-bottom: 0;
+}

@@ -14,7 +14,7 @@ class CartsIndex extends Component {
     cartItems = [].concat.apply([], cartItems);
 
     return (
-      <div className='cart-items-container'>
+      <div className='purchased-cart-items-container'>
         <div className='cart-items-top'>
           <h2>Purchases</h2>
           <Link className='keep-shopping-button-empty' to={`/items`}>Keep shopping</Link>

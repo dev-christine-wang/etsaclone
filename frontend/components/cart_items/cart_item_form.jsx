@@ -21,7 +21,7 @@ class CartItemForm extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({value: e.target.value});
+    this.setState({ value: e.target.value });
   }
 
   handleSubmit(e) {
@@ -66,7 +66,11 @@ class CartItemForm extends React.Component {
             </select>
           </li>
           <li>
-            <input className='add-to-cart-button' type='submit' value='Add to cart' />
+            <input
+              className='add-to-cart-button'
+              type='submit'
+              value='Add to cart'
+            />
           </li>
         </ul>
       </form>

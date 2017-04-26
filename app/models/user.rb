@@ -30,6 +30,7 @@ class User < ApplicationRecord
   has_many :cart_items,
     through: :carts,
     source: :cart_items
+  has_many :reviews
 
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)
