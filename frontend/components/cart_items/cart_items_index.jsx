@@ -41,7 +41,10 @@ class CartItemsIndex extends Component {
     } else {
       return (
         <div className='cart-items-container'>
-          <h2>{`${cartItems.length} item(s) in your cart`}</h2>
+          <div className='cart-items-top'>
+            <h2>{`${cartItems.length} item(s) in your cart`}</h2>
+            <Link className='keep-shopping-button' to={`/items`}>Keep shopping</Link>
+          </div>
           <div className='cart-items-box'>
             <div>
               <ul className='cart-items'>
