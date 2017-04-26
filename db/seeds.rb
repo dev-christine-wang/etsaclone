@@ -9,14 +9,6 @@
 User.delete_all
 Item.delete_all
 
-User.create!(
-  first_name: 'Demo',
-  last_name: 'User',
-  email: 'demouser@gmail.com',
-  password: 'password',
-  seller: false
-)
-
 seller_tina = User.create!(
               first_name: 'Tina',
               last_name: 'Williams',
@@ -266,5 +258,3 @@ Item.create!(
   quantity: 100,
   image: File.open("app/assets/images/necklace_10.png")
 )
-# image: File.open("app/assets/images/ring-default.jpg")
-# Image.create(image: File.open("app/assets/images/ring-default.jpg"), user_id: user.id)
