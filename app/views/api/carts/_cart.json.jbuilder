@@ -13,5 +13,6 @@ json.cart_items do
     json.item_price cart_item.item.price
     json.item_category cart_item.item.category
     json.item_image cart_item.item.image
+    json.item_updated_date_time cart_item.updated_at
   end
 end

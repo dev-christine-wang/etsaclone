@@ -14,10 +14,17 @@ class CartsIndex extends Component {
     cartItems = [].concat.apply([], cartItems);
 
     return (
-      <div>
-        <ul>
-          { cartItems.reverse().map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
-        </ul>
+      <div className='cart-items-container'>
+        <div className='cart-items-top'>
+          <h2>Purchased items</h2>
+        </div>
+        <div className='cart-items-box'>
+          <div>
+            <ul className='cart-items'>
+              { cartItems.reverse().map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
