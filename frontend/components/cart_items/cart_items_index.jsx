@@ -38,7 +38,7 @@ class CartItemsIndex extends Component {
       return (
         <div className='cart-items-container'>
           <div className='cart-items-top'>
-            <h2>Cart Empty</h2>
+            <h2>{`${cartItems.length} item(s) in your cart`}</h2>
             <Link className='keep-shopping-button-empty' to={`/items`}>Keep shopping</Link>
           </div>
         </div>
