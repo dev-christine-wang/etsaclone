@@ -62,7 +62,9 @@ const sessionSignOutLink = (currentUser, signout) => (
             </ul>
           </li>
           <li>
-            <button className='session-link' onClick={ signout }>Sign Out</button>
+            <Link to='/' activeClassName='current'>
+              <button className='session-link' onClick={ signout }>Sign Out</button>
+            </Link>
           </li>
           <li>
             <Link className='cart-link' to='/cart' activeClassName='current'>
