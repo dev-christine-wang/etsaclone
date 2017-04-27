@@ -27,4 +27,8 @@ class Item < ApplicationRecord
     class_name: 'User'
 
   has_many :reviews
+
+  include PgSearch
+
+  pg_search_scope :search_by_item_details, :against => [:name, :description, :category], :using => { tsearch: { any_word: true } }
 end

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Masthead = () => {
   return(
@@ -13,6 +14,9 @@ const Masthead = () => {
             whatever you're into
           </li>
         </ul>
+      </div>
+      <div>
+        <Link  className='shop-link' to='/items' activeClassName='current'>Shop our jewelry collection</Link>
       </div>
     </header>
   );

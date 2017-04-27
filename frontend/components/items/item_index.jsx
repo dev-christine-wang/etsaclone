@@ -5,36 +5,49 @@ import ItemIndexItem from './item_index_item';
 
 class ItemIndex extends Component {
   componentDidMount() {
-    this.props.fetchItems();
+    if (this.props.location.query.searchWords) {
+      this.props.fetchSearchedItems(this.props.location.query.searchWords);
+    } else {
+      this.props.fetchItems();
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.location.query.searchWords !== nextProps.location.query.searchWords) {
+      nextProps.fetchSearchedItems(nextProps.location.query.searchWords);
+    }
   }
 
   render() {
-    const { items, children } = this.props;
+    const { items, fewItems, children } = this.props;
+    let sectionHeader;
 
-    if (this.props.location.pathname.slice(1) === 'items') {
+    if (this.props.location.pathname === '/') {
+      sectionHeader = 'Browse our latest handmade goods';
+    } else if (this.props.location.query.searchWords) {
+      sectionHeader = `Results for \"${this.props.location.query.searchWords}\"`;
+    } else {
+      sectionHeader = 'All Jewelry';
+    }
+
+    if (this.props.location.pathname === '/') {
       return (
-        <section className='section-description-all'>
-          <h2 className='all-items'>All Jewelry</h2>
+        <section>
+          <h2 className='section-description-preview'>{ sectionHeader }</h2>
           <div className='items-index'>
             <ul>
-              { items.reverse().map(item => <ItemIndexItem key={item.id} item={item} />)}
+              { fewItems.map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
         </section>
       );
     } else {
-      let itemPreview = items.slice(items.length - 14);
-
       return (
-        <section>
-          <h2 className='section-description-preview'>
-            <Link to='/items' activeClassName='current'>
-              Browse our latest handmade goods
-            </Link>
-          </h2>
+        <section className='section-description-all'>
+          <h2 className='all-items'>{ sectionHeader }</h2>
           <div className='items-index'>
             <ul>
-              { itemPreview.reverse().map(item => <ItemIndexItem key={item.id} item={item} />)}
+              { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
         </section>

@@ -20,3 +20,7 @@ export const fetchItems = () => dispatch => (
 export const fetchItem = id => dispatch => (
   APIUtil.fetchItem(id).then(item => dispatch(receiveItem(item)))
 );
+
+export const fetchSearchedItems = searchWords => dispatch => (
+  APIUtil.fetchSearchedItems(searchWords).then(items => dispatch(receiveItems(items)))
+);

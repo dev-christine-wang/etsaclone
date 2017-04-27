@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import SearchFormContainer from '../search_form/search_form_container';
 const FontAwesome = require('react-fontawesome');
 
 const sessionSignInLinks = signin => (
@@ -10,6 +11,7 @@ const sessionSignInLinks = signin => (
           <li>
             <Link to='/' activeClassName='current'>EtsAClone</Link>
           </li>
+          <li><SearchFormContainer /></li>
         </ul>
       </nav>
       <nav className='register-signin-nav'>
@@ -49,6 +51,7 @@ const sessionSignOutLink = (currentUser, signout) => (
           <li>
             <Link to='/' activeClassName='current'>EtsAClone</Link>
           </li>
+          <li><SearchFormContainer /></li>
         </ul>
       </nav>
       <nav className='signout-nav'>

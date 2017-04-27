@@ -1,6 +1,7 @@
 .masthead {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
   position: relative;
 }
 
@@ -36,4 +37,23 @@
   display: block;
   position: absolute;
   top: 82%;
+}
+
+.shop-link {
+  position: absolute;
+  top: 65%;
+  left: 55.8%;
+  padding: 0.5vw;
+  border: 2px solid $darkest-gray;
+  border-radius: 4px;
+  font-family: $sans-serif;
+  font-size: 0.85vw;
+  color: $darkest-gray;
+}
+
+.shop-link:hover {
+  border: 1px solid $light-gray;
+  background-color: $dark-orange;
+  transition: background-color 0.3s;
+  color: white;
 }

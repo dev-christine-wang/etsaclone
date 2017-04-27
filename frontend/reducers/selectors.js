@@ -1,6 +1,7 @@
 import { values } from 'lodash';
 
-export const selectAllItems = ({ items }) => values(items);
+export const selectAllItems = ({ items }) => values(items).reverse();
+export const selectFewItems = ({ items }) => values(items).reverse().slice(0, 14);
 export const selectItem = ({ items }, id) => {
   return items[id];
 }

@@ -11,3 +11,10 @@ export  const fetchItem = (id) => {
     url: `api/items/${id}`
   });
 };
+
+export const fetchSearchedItems = searchWords => {
+  return $.ajax({
+    method: 'GET',
+    url: `api/items?searchWords=${searchWords}`
+  });
+};
