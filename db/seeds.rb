@@ -1380,3 +1380,663 @@ review_69 = Review.create!(
   rating: 5,
   description: "Great alternative to Tiffany\'s!"
 )
+
+user_70 = User.create!(
+              first_name: 'Ellen',
+              last_name: 'Howard',
+              email: 'ellenhoward@gmail.com',
+              password: 'ellenhoward',
+              seller: false
+            )
+
+review_70 = Review.create!(
+  item_id: earrings_1.id,
+  user_id: user_70.id,
+  rating: 4,
+  description: "Received a lot of compliments when I wore them!"
+)
+
+user_71 = User.create!(
+              first_name: 'Kathleen',
+              last_name: 'Deleon',
+              email: 'kathleendeleon@gmail.com',
+              password: 'kathleendeleon',
+              seller: false
+            )
+
+review_71 = Review.create!(
+  item_id: earrings_2.id,
+  user_id: user_71.id,
+  rating: 5,
+  description: "LOVE THE POP OF COLOR!"
+)
+
+user_72 = User.create!(
+              first_name: 'Marcia',
+              last_name: 'Rau',
+              email: 'marciarau@gmail.com',
+              password: 'marciarau',
+              seller: false
+            )
+
+review_72 = Review.create!(
+  item_id: earrings_3.id,
+  user_id: user_72.id,
+  rating: 4,
+  description: "Love the cute design!"
+)
+
+user_73 = User.create!(
+              first_name: 'Irene',
+              last_name: 'Richardson',
+              email: 'irenerichardson@gmail.com',
+              password: 'irenerichardson',
+              seller: false
+            )
+
+review_73 = Review.create!(
+  item_id: earrings_3.id,
+  user_id: user_73.id,
+  rating: 3,
+  description: "Wish the hook were a bit smaller, but overall, I enjoy wearing it."
+)
+
+user_74 = User.create!(
+              first_name: 'Amanda',
+              last_name: 'Hein',
+              email: 'amandahein@gmail.com',
+              password: 'amandahein',
+              seller: false
+            )
+
+review_74 = Review.create!(
+  item_id: earrings_4.id,
+  user_id: user_74.id,
+  rating: 5,
+  description: "My favorite studs to wear!"
+)
+
+user_75 = User.create!(
+              first_name: 'Kristina',
+              last_name: 'Fowler',
+              email: 'kristinafowler@gmail.com',
+              password: 'kristinafowler',
+              seller: false
+            )
+
+review_75 = Review.create!(
+  item_id: earrings_4.id,
+  user_id: user_75.id,
+  rating: 5,
+  description: "Very well made. Would purchase again!"
+)
+
+user_76 = User.create!(
+              first_name: 'Tracy',
+              last_name: 'Morrill',
+              email: 'tracymorrill@gmail.com',
+              password: 'tracymorrill',
+              seller: false
+            )
+
+review_76 = Review.create!(
+  item_id: earrings_5.id,
+  user_id: user_76.id,
+  rating: 4,
+  description: "Love the unique design!"
+)
+
+user_77 = User.create!(
+              first_name: 'Lena',
+              last_name: 'Hernandez',
+              email: 'lenahernandez@gmail.com',
+              password: 'lenahernandez',
+              seller: false
+            )
+
+review_77 = Review.create!(
+  item_id: earrings_6.id,
+  user_id: user_77.id,
+  rating: 4,
+  description: "Love the turquoise! Great pop of color."
+)
+
+user_78 = User.create!(
+              first_name: 'Emma',
+              last_name: 'Thorne',
+              email: 'emmathorne@gmail.com',
+              password: 'emmathorne',
+              seller: false
+            )
+
+review_78 = Review.create!(
+  item_id: earrings_6.id,
+  user_id: user_78.id,
+  rating: 5,
+  description: "Beautiful, just beautiful!"
+)
+
+user_79 = User.create!(
+              first_name: 'Nicky',
+              last_name: 'Bakken',
+              email: 'nickybakken@gmail.com',
+              password: 'nickybakken',
+              seller: false
+            )
+
+review_79 = Review.create!(
+  item_id: earrings_7.id,
+  user_id: user_79.id,
+  rating: 5,
+  description: "Great quality! Exactly what I\'ve been searching for!"
+)
+
+user_80 = User.create!(
+              first_name: 'Chau',
+              last_name: 'White',
+              email: 'chauwhite@gmail.com',
+              password: 'chauwhite',
+              seller: false
+            )
+
+review_80 = Review.create!(
+  item_id: earrings_8.id,
+  user_id: user_80.id,
+  rating: 4,
+  description: "Great quality! Has a good weight to them."
+)
+
+user_81 = User.create!(
+              first_name: 'Deborah',
+              last_name: 'Petrus',
+              email: 'deborahpetrus@gmail.com',
+              password: 'deborahpetrus',
+              seller: false
+            )
+
+review_81 = Review.create!(
+  item_id: earrings_8.id,
+  user_id: user_81.id,
+  rating: 4,
+  description: "Love them! My friends bought them too!"
+)
+
+user_82 = User.create!(
+              first_name: 'Lori',
+              last_name: 'Fraise',
+              email: 'lorifraise@gmail.com',
+              password: 'lorifraise',
+              seller: false
+            )
+
+review_82 = Review.create!(
+  item_id: earrings_9.id,
+  user_id: user_82.id,
+  rating: 5,
+  description: "Bought it for my best friend and she loves it!"
+)
+
+user_83 = User.create!(
+              first_name: 'Jennifer',
+              last_name: 'McIntire',
+              email: 'jennifermcintire@gmail.com',
+              password: 'jennifermcintire',
+              seller: false
+            )
+
+review_83 = Review.create!(
+  item_id: necklace_1.id,
+  user_id: user_83.id,
+  rating: 5,
+  description: "My go-to necklace at the moment!"
+)
+
+user_84 = User.create!(
+              first_name: 'Ashley',
+              last_name: 'Holloway',
+              email: 'ashleyholloway@gmail.com',
+              password: 'ashleyholloway',
+              seller: false
+            )
+
+review_84 = Review.create!(
+  item_id: necklace_2.id,
+  user_id: user_84.id,
+  rating: 5,
+  description: "Bought it for my sister and she absolutely loves it!"
+)
+
+user_85 = User.create!(
+              first_name: 'Lucia',
+              last_name: 'Benton',
+              email: 'luciabenton@gmail.com',
+              password: 'luciabenton',
+              seller: false
+            )
+
+review_85 = Review.create!(
+  item_id: necklace_2.id,
+  user_id: user_85.id,
+  rating: 5,
+  description: "Love the details surrounding the center stone!"
+)
+
+user_86 = User.create!(
+              first_name: 'Esther',
+              last_name: 'Colby',
+              email: 'esthercolby@gmail.com',
+              password: 'esthercolby',
+              seller: false
+            )
+
+review_86 = Review.create!(
+  item_id: necklace_3.id,
+  user_id: user_86.id,
+  rating: 5,
+  description: "Very well made! Love the details."
+)
+
+user_87 = User.create!(
+              first_name: 'Carrie',
+              last_name: 'Langford',
+              email: 'carrielangford@gmail.com',
+              password: 'carrielangford',
+              seller: false
+            )
+
+review_87 = Review.create!(
+  item_id: necklace_3.id,
+  user_id: user_87.id,
+  rating: 5,
+  description: "Bought it as a gift and I love it! Just ordered myself one."
+)
+
+user_88 = User.create!(
+              first_name: 'Theresa',
+              last_name: 'Hill',
+              email: 'theresahill@gmail.com',
+              password: 'theresahill',
+              seller: false
+            )
+
+review_88 = Review.create!(
+  item_id: necklace_4.id,
+  user_id: user_88.id,
+  rating: 4,
+  description: "Very well made! Just bought one for my mom."
+)
+
+user_89 = User.create!(
+              first_name: 'Angela',
+              last_name: 'Robinson',
+              email: 'angelarobinson@gmail.com',
+              password: 'angelarobinson',
+              seller: false
+            )
+
+review_89 = Review.create!(
+  item_id: necklace_5.id,
+  user_id: user_89.id,
+  rating: 5,
+  description: "LOVE LOVE LOVE IT!!!"
+)
+
+user_90 = User.create!(
+              first_name: 'Ashley',
+              last_name: 'Moore',
+              email: 'ashleymoore@gmail.com',
+              password: 'ashleymoore',
+              seller: false
+            )
+
+review_90 = Review.create!(
+  item_id: necklace_6.id,
+  user_id: user_90.id,
+  rating: 5,
+  description: "Very well made!"
+)
+
+user_91 = User.create!(
+              first_name: 'Jennifer',
+              last_name: 'Perry',
+              email: 'jenniferperry@gmail.com',
+              password: 'jenniferperry',
+              seller: false
+            )
+
+review_91 = Review.create!(
+  item_id: necklace_7.id,
+  user_id: user_91.id,
+  rating: 5,
+  description: "High quality and great design!"
+)
+
+user_92 = User.create!(
+              first_name: 'Tiffany',
+              last_name: 'Brouillard',
+              email: 'tiffanybrouillard@gmail.com',
+              password: 'tiffanybrouillard',
+              seller: false
+            )
+
+review_92 = Review.create!(
+  item_id: necklace_8.id,
+  user_id: user_92.id,
+  rating: 5,
+  description: "Love the small pop of color!"
+)
+
+user_93 = User.create!(
+              first_name: 'Lorraine',
+              last_name: 'Speck',
+              email: 'lorrainespeck@gmail.com',
+              password: 'lorrainespeck',
+              seller: false
+            )
+
+review_93 = Review.create!(
+  item_id: necklace_9.id,
+  user_id: user_93.id,
+  rating: 5,
+  description: "Great piece to gift to family and friends!"
+)
+
+user_94 = User.create!(
+              first_name: 'Theresa',
+              last_name: 'Sinclair',
+              email: 'theresasinclair@gmail.com',
+              password: 'theresasinclair',
+              seller: false
+            )
+
+review_94 = Review.create!(
+  item_id: necklace_10.id,
+  user_id: user_94.id,
+  rating: 5,
+  description: "Love it as a layering piece!"
+)
+
+user_95 = User.create!(
+              first_name: 'Barbara',
+              last_name: 'Smallwood',
+              email: 'barbarasmallwood@gmail.com',
+              password: 'barbarasmallwood',
+              seller: false
+            )
+
+review_95 = Review.create!(
+  item_id: necklace_10.id,
+  user_id: user_95.id,
+  rating: 5,
+  description: "Great simple design."
+)
+
+user_96 = User.create!(
+              first_name: 'Jennifer',
+              last_name: 'Dodd',
+              email: 'jenniferdodd@gmail.com',
+              password: 'jenniferdodd',
+              seller: false
+            )
+
+review_96 = Review.create!(
+  item_id: ring_1.id,
+  user_id: user_96.id,
+  rating: 5,
+  description: "Great simple design!!!"
+)
+
+user_97 = User.create!(
+              first_name: 'Helen',
+              last_name: 'Irwin',
+              email: 'helenirwin@gmail.com',
+              password: 'helenirwin',
+              seller: false
+            )
+
+review_97 = Review.create!(
+  item_id: ring_1.id,
+  user_id: user_97.id,
+  rating: 5,
+  description: "LOVE THEM! Just ordered my best friend a set."
+)
+
+user_98 = User.create!(
+              first_name: 'Wilma',
+              last_name: 'Brown',
+              email: 'wilmabrown@gmail.com',
+              password: 'wilmabrown',
+              seller: false
+            )
+
+review_98 = Review.create!(
+  item_id: ring_2.id,
+  user_id: user_98.id,
+  rating: 5,
+  description: "Simple and classic."
+)
+
+user_99 = User.create!(
+              first_name: 'Tina',
+              last_name: 'Smith',
+              email: 'tinasmith@gmail.com',
+              password: 'tinasmith',
+              seller: false
+            )
+
+review_99 = Review.create!(
+  item_id: ring_2.id,
+  user_id: user_99.id,
+  rating: 5,
+  description: "Very well made!"
+)
+
+user_100 = User.create!(
+              first_name: 'Susan',
+              last_name: 'Star',
+              email: 'susanstar@gmail.com',
+              password: 'susanstar',
+              seller: false
+            )
+
+review_100 = Review.create!(
+  item_id: ring_3.id,
+  user_id: user_100.id,
+  rating: 5,
+  description: "Such a delicate, pretty piece!"
+)
+
+user_101 = User.create!(
+              first_name: 'May',
+              last_name: 'Jackson',
+              email: 'mayjackson@gmail.com',
+              password: 'mayjackson',
+              seller: false
+            )
+
+review_101 = Review.create!(
+  item_id: ring_3.id,
+  user_id: user_101.id,
+  rating: 5,
+  description: "Just love it!"
+)
+
+user_102 = User.create!(
+              first_name: 'Heather',
+              last_name: 'Bloom',
+              email: 'heatherbloom@gmail.com',
+              password: 'heatherbloom',
+              seller: false
+            )
+
+review_102 = Review.create!(
+  item_id: ring_4.id,
+  user_id: user_102.id,
+  rating: 5,
+  description: "Love the design!"
+)
+
+user_103 = User.create!(
+              first_name: 'Carolyn',
+              last_name: 'Torres',
+              email: 'carolyntorres@gmail.com',
+              password: 'carolyntorres',
+              seller: false
+            )
+
+review_103 = Review.create!(
+  item_id: ring_4.id,
+  user_id: user_103.id,
+  rating: 5,
+  description: "Very pretty! Glad I got them."
+)
+
+user_104 = User.create!(
+              first_name: 'Tammy',
+              last_name: 'Krieger',
+              email: 'tammykrieger@gmail.com',
+              password: 'tammykrieger',
+              seller: false
+            )
+
+review_104 = Review.create!(
+  item_id: ring_5.id,
+  user_id: user_104.id,
+  rating: 4,
+  description: "Love the simple design!"
+)
+
+user_105 = User.create!(
+              first_name: 'Helen',
+              last_name: 'Ashley',
+              email: 'helenashley@gmail.com',
+              password: 'helenashley',
+              seller: false
+            )
+
+review_105 = Review.create!(
+  item_id: ring_5.id,
+  user_id: user_105.id,
+  rating: 4,
+  description: "Love it, but is a bit expensive."
+)
+
+user_106 = User.create!(
+              first_name: 'Jennifer',
+              last_name: 'Nelson',
+              email: 'jennifernelson@gmail.com',
+              password: 'jennifernelson',
+              seller: false
+            )
+
+review_106 = Review.create!(
+  item_id: ring_6.id,
+  user_id: user_106.id,
+  rating: 4,
+  description: "Great design!!!"
+)
+
+user_107 = User.create!(
+              first_name: 'Kathy',
+              last_name: 'McCord',
+              email: 'kathymccord@gmail.com',
+              password: 'kathymccord',
+              seller: false
+            )
+
+review_107 = Review.create!(
+  item_id: ring_6.id,
+  user_id: user_107.id,
+  rating: 5,
+  description: "Lovely ring set. Receive compliments whenever I wear them!"
+)
+
+user_108 = User.create!(
+              first_name: 'Renee',
+              last_name: 'Jones',
+              email: 'reneejones@gmail.com',
+              password: 'reneejones',
+              seller: false
+            )
+
+review_108 = Review.create!(
+  item_id: ring_7.id,
+  user_id: user_108.id,
+  rating: 5,
+  description: "Very pretty! Love them."
+)
+
+user_109 = User.create!(
+              first_name: 'Marion',
+              last_name: 'Hopps',
+              email: 'marionhopps@gmail.com',
+              password: 'marionhopps',
+              seller: false
+            )
+
+review_109 = Review.create!(
+  item_id: ring_7.id,
+  user_id: user_109.id,
+  rating: 5,
+  description: "Got the set for my sister and she loves it!!!"
+)
+
+user_110 = User.create!(
+              first_name: 'Denise',
+              last_name: 'Miller',
+              email: 'denisemiller@gmail.com',
+              password: 'denisemiller',
+              seller: false
+            )
+
+review_110 = Review.create!(
+  item_id: ring_8.id,
+  user_id: user_110.id,
+  rating: 5,
+  description: "Great pop of color!"
+)
+
+user_111 = User.create!(
+              first_name: 'Leila',
+              last_name: 'Randle',
+              email: 'leilarandle@gmail.com',
+              password: 'leilarandle',
+              seller: false
+            )
+
+review_111 = Review.create!(
+  item_id: ring_8.id,
+  user_id: user_111.id,
+  rating: 5,
+  description: "Receive compliments whenever I wear it!"
+)
+
+user_112 = User.create!(
+              first_name: 'Tracey',
+              last_name: 'McKeehan',
+              email: 'tracymckeehan@gmail.com',
+              password: 'tracymckeehan',
+              seller: false
+            )
+
+review_112 = Review.create!(
+  item_id: ring_9.id,
+  user_id: user_112.id,
+  rating: 5,
+  description: "LOVE LOVE LOVE IT!!!"
+)
+
+user_113 = User.create!(
+              first_name: 'Tara',
+              last_name: 'Craig',
+              email: 'taracraig@gmail.com',
+              password: 'taracraig',
+              seller: false
+            )
+
+review_113 = Review.create!(
+  item_id: ring_9.id,
+  user_id: user_113.id,
+  rating: 5,
+  description: "Lovely ring! Will order more as gifts!"
+)
