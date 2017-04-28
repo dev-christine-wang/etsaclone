@@ -32,8 +32,8 @@ class ItemIndex extends Component {
 
     if (this.props.location.pathname === '/') {
       return (
-        <section>
-          <h2 className='section-description-preview'>{ sectionHeader }</h2>
+        <section className='section-description-preview'>
+          <h2>{ sectionHeader }</h2>
           <div className='items-index'>
             <ul>
               { fewItems.map(item => <ItemIndexItem key={item.id} item={item} />)}
