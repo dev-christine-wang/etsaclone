@@ -88,8 +88,13 @@
   display: flex;
 }
 
-.cart-item-name, .cart-item-seller {
+.cart-item-name {
   font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cart-item-seller {
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
