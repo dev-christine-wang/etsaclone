@@ -14,7 +14,11 @@ class ItemIndex extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.location.query.searchWords !== nextProps.location.query.searchWords) {
-      nextProps.fetchSearchedItems(nextProps.location.query.searchWords);
+      if (nextProps.location.query.searchWords) {
+        nextProps.fetchSearchedItems(nextProps.location.query.searchWords);
+      } else {
+        nextProps.fetchItems();
+      }
     }
   }
 
