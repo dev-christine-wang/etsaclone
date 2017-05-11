@@ -1,6 +1,6 @@
 # EtsAClone
 
-[EtsAClone live](http://etsaclone.herokuapp.com/)
+[EtsAClone live](http://etsaclone.christinetwang.me/)
 
 EtsAClone is an e-commerce web application inspired by Etsy that is built using Ruby on Rails, PostgreSQL, and React/Redux.
 
