@@ -34,9 +34,6 @@ const sessionSignInLinks = signin => (
           <li>
             <Link className='all-jewelry' to='/items' activeClassName='current'>All Jewelry</Link>
           </li>
-          <li>Earrings</li>
-          <li>Necklaces</li>
-          <li>Rings</li>
         </ul>
       </nav>
     </div>
