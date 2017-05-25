@@ -17,7 +17,6 @@ class CartItemForm extends React.Component {
 
   componentDidMount() {
     this.props.fetchCarts();
-    this.props.fetchCartItems();
   }
 
   handleChange(e) {
@@ -28,17 +27,19 @@ class CartItemForm extends React.Component {
     e.preventDefault();
     this.redirectIfNotLoggedIn();
 
-    const carts = this.props.carts;
-    const cart = carts[carts.length - 1];
-    const cartId = cart.id;
-    const cartItem = {
-      cart_id: cartId,
-      item_id: parseInt(this.props.params.itemId),
-      item_quantity: parseInt(this.state.value)
-    };
+    if (this.props.currentUser) {
+      const carts = this.props.carts;
+      const cart = carts[carts.length - 1];
+      const cartId = cart.id;
+      const cartItem = {
+        cart_id: cartId,
+        item_id: parseInt(this.props.params.itemId),
+        item_quantity: parseInt(this.state.value)
+      };
 
-    this.props.addCartItem(cartItem);
-    this.navigateToCartItems();
+      this.props.addCartItem(cartItem);
+      this.navigateToCartItems();
+    }
   }
 
   redirectIfNotLoggedIn() {

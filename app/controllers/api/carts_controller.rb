@@ -10,8 +10,10 @@ class Api::CartsController < ApplicationController
   end
 
   def index
-    @carts = current_user.carts
-    render :index
+    if current_user
+      @carts = current_user.carts
+      render :index
+    end
   end
 
   def update
