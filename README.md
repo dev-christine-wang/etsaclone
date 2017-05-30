@@ -1,6 +1,6 @@
 # EtsAClone
 
-[Explore EtsAClone](http://etsaclone.christinetwang.me/)
+[Explore EtsAClone](https://etsaclone.christinetwang.me/)
 
 EtsAClone's a single-page e-commerce web application that's inspired by Etsy.
 
