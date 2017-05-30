@@ -1,6 +1,7 @@
 .search-bar {
   display: flex;
   margin-left: 22px;
+  width: 175%;
   border: 1px solid $dark-gray;
   border-radius: 4px;
   font-family: $sans-serif;
@@ -8,8 +9,12 @@
   color: $darker-gray-2;
 }
 
+.search-input-li {
+  width: 175%;
+}
+
 .search-input {
-  width: 320px;
+  width: 175%;
   padding: 8px 9px;
 }
 
@@ -22,4 +27,10 @@
 .search-submit-button:hover {
   background-color: $lighter-blue;
   transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 415px) {
+  .search-bar, .search-input-li, .search-input {
+    width: 75%;
+  }
 }
