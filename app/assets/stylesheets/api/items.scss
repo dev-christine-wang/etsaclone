@@ -1,23 +1,24 @@
-.section-description-preview {
-  margin: 36px auto 12px auto;
+.section-description-preview, .section-description-all {
   width: 100%;
 }
 
-.section-description-preview > h2 {
+.section-description-preview {
+  margin: 36px auto 12px auto;
+}
+
+.preview-items {
   margin-bottom: 20px;
+  color: $light-black;
+}
+
+.preview-items, .all-items {
   text-align: center;
   font-family: $sans-serif;
   font-size: 1.6vw;
-  color: $light-black;
 }
 
 .section-description-all {
   margin: 0 auto 12px auto;
-  width: 100%;
-  text-align: center;
-  font-family: $sans-serif;
-  font-size: 1.6vw;
-  color: $light-black;
 }
 
 .all-items {
@@ -40,9 +41,9 @@
 }
 
 .item-index-item {
-  margin: 0 10.1px 20px 10.1px;
   max-width: 12.96%;
   min-width: 150px;
+  margin: 0 10.1px 20px 10.1px;
   border-top: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
   border-bottom: 1.9px solid $dark-gray;
@@ -52,17 +53,15 @@
 }
 
 .item-image {
+  width: auto\9;
   max-width: 100%;
   height: auto;
-  width: auto\9;
   border-bottom: 1px solid $light-gray;
 }
 
 .item-name {
-  margin-top: 8px;
-  margin-bottom: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  margin: 8px 0 4px 0;
+  padding: 0 6px;
   text-align: left;
   font-size: 12px;
   color: $darkest-gray;
@@ -71,11 +70,10 @@
 .item-details {
   display: flex;
   justify-content: space-between;
-  padding-left: 6px;
-  padding-right: 6px;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  padding: 0 6px;
+  margin: 4px 0 8px 0;
 }
+
 .item-seller {
   display: flex;
   justify-content: flex-start;
@@ -88,8 +86,21 @@
   color: $green;
 }
 
-@media only screen and (min-width: 1224px) {
-  .item-index-item {
-    max-width: 12.73%;
-  }
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .section-description-preview > h2 {
+      font-size: 22px;
+    }
+
+    .item-index-item {
+      width: 10%
+    }
+}
+
+@media only screen
+  and (min-width: 1224px) {
+    .item-index-item {
+      max-width: 12.73%;
+    }
 }
