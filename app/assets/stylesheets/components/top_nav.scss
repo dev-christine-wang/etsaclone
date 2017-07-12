@@ -1,6 +1,7 @@
 .top_nav {
   background-color: white;
 }
+
 .top_nav_top {
   display: flex;
   justify-content: space-between;
@@ -8,30 +9,58 @@
   border-bottom: 1px solid $light-gray;
 }
 
-.logo > ul, .register-signin-nav > ul, .signout-nav > ul, .categories > ul {
+.logo {
+  font-family: $serif;
+  font-size: 37px;
+  color: $dark-orange;
+}
+
+.logo > ul, .register-signin-nav, .signout-nav, .register-signin-nav > ul, .signout-nav > ul, .categories > ul, .user > ul, .cart, .purchases {
   display: flex;
   align-items: center;
 }
 
-.user > ul {
-  display: flex;
-  align-items: center;
+.register-signin-nav, .signout-nav {
+  font-family: $sans-serif;
+  font-size: 14px;
+  color: $blue;
+}
+
+.register-signin-nav > ul > li, .signout-nav > ul > li {
+  margin-right: 20px;
+}
+
+.register-signin-nav > ul > li:last-of-type, .signout-nav > ul > li:last-of-type {
+  margin-right: 0;
+}
+
+.register-link:hover, .demo-link:hover {
+  border-bottom: 1px solid $blue;
+  transition: border-bottom 0.3s;
+}
+
+.session-link {
+  padding: 8px 9px;
+  border: 1px solid $blue;
+  border-radius: 4px;
+}
+
+.session-link:hover {
+  background-color: $lightest-blue;
+  transition: background-color 0.3s;
+}
+
+.user > ul, .cart, .purchases {
   flex-direction: column;
 }
 
 .cart {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding-left: 20px;
   border-left: 1px solid $light-gray;
   color: $darker-gray-2;
 }
 
 .purchases {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   color: $darker-gray-2;
 }
 
@@ -55,49 +84,7 @@
 }
 
 .all-jewelry:hover {
-  color: $darkest-gray;
   border-bottom: 3px solid $dark-orange;
   transition: border-bottom 0.1s;
-}
-
-.logo {
-  font-family: $serif;
-  font-size: 37px;
-  color: $dark-orange;
-}
-
-.register-signin-nav, .signout-nav {
-  display: flex;
-  align-items: center;
-  font-family: $sans-serif;
-  font-size: 14px;
-  color: $blue;
-}
-
-.register-signin-nav > ul > li, .signout-nav > ul > li {
-  margin-right: 20px;
-}
-
-.register-signin-nav > ul > li:last-of-type {
-  margin-right: 0;
-}
-
-.signout-nav > ul > li:last-of-type {
-  margin-right: 0;
-}
-
-.register-link:hover, .demo-link:hover {
-  border-bottom: 1px solid $blue;
-  transition: border-bottom 0.3s;
-}
-
-.session-link {
-  padding: 8px 9px;
-  border: 1px solid $blue;
-  border-radius: 4px;
-}
-
-.session-link:hover {
-  background-color: $lightest-blue;
-  transition: background-color 0.3s;
+  color: $darkest-gray;
 }
