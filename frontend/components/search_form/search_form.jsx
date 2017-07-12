@@ -25,9 +25,9 @@ class SearchForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={ this.handleSubmit }>
-        <ul className='search-bar'>
-          <li className='search-input-li'>
+      <form className='search-bar' onSubmit={ this.handleSubmit }>
+        <ul>
+          <li>
             <input className='search-input' type='text' placeholder={'Search jewelry collection'} value={ this.state.searchWords } onChange={ this.handleChange } />
           </li>
           <li>
