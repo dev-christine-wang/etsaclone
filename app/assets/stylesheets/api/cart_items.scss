@@ -180,11 +180,3 @@
   font-size: 14px;
   color: $blue;
 }
-
-@media only screen
-  and (max-device-width: 750px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .add-to-cart-button {
-      width: 342px;
-    }
-}
