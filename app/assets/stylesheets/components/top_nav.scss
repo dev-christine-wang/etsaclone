@@ -88,3 +88,16 @@
   transition: border-bottom 0.1s;
   color: $darkest-gray;
 }
+
+@media only screen
+  and (max-device-width: 425px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .top_nav_top {
+      padding: 20px 40px;
+    }
+
+    .top_nav_bottom {
+      padding: 14.5px 40px;
+    }
+}
