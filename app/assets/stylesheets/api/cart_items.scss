@@ -81,6 +81,10 @@
 .cart-item-details-left {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  align-items: flex-start;
+>>>>>>> parent of 8342cec... Make changes to flexbox
   margin-left: 34px;
 }
 
@@ -199,7 +203,7 @@
     }
 
     .cart-item-name {
-      width: 130px;
+      width: 52px;
       overflow-wrap: break-word;
     }
 
