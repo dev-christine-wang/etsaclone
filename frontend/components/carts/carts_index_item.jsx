@@ -19,21 +19,25 @@ class CartsIndexItem extends React.Component {
           </li>
         </ul>
         <ul className='cart-item-details'>
-          <li className='cart-item-name'>
-            { this.props.cartItem.item_name }
-          </li>
-          <li className='cart-item-seller'>
-            { `${this.props.cartItem.item_seller.first_name} ${this.props.cartItem.item_seller.last_name}` }
-          </li>
-          <li className='cart-item-quantity'>
-            { this.props.cartItem.item_quantity }
-          </li>
-          <li className='cart-item-price'>
-            { `$${this.props.cartItem.item_price}.00` }
-          </li>
-          <li className='cart-item-purchased'>
-            { this.props.cartItem.item_updated_date_time.slice(0, 10) }
-          </li>
+          <ul className='cart-item-details-left'>
+            <li className='cart-item-name'>
+              { this.props.cartItem.item_name }
+            </li>
+            <li className='cart-item-seller'>
+              { `${this.props.cartItem.item_seller.first_name} ${this.props.cartItem.item_seller.last_name}` }
+            </li>
+          </ul>
+          <ul className='cart-item-details-right'>
+            <li className='cart-item-quantity'>
+              { this.props.cartItem.item_quantity }
+            </li>
+            <li className='cart-item-price'>
+              { `$${this.props.cartItem.item_price}.00` }
+            </li>
+            <li className='cart-item-purchased'>
+              { this.props.cartItem.item_updated_date_time.slice(0, 10) }
+            </li>
+          </ul>
         </ul>
         <ul className='cart-item-review'>
           <li>

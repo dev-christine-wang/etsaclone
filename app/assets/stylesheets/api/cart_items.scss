@@ -78,15 +78,19 @@
   border-radius: 4px;
 }
 
-.cart-item-details {
+.cart-item-details-left {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   margin-left: 34px;
 }
 
-.cart-item-details > li {
+.cart-item-details {
   display: flex;
+}
+
+.cart-item-details-right {
+  display: flex;
+  align-items: flex-start;
 }
 
 .cart-item-name {
