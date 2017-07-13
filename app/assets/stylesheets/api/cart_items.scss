@@ -81,6 +81,7 @@
 .cart-item-details {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   margin-left: 34px;
 }
 
@@ -191,6 +192,11 @@
     .cart-item-image {
       width: 120px;
       height: 120px;
+    }
+
+    .cart-item-name {
+      width: 52px;
+      overflow-wrap: break-word;
     }
 
     .cart-item-quantity {
