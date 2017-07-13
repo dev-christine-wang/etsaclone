@@ -10,7 +10,7 @@ class CartsIndex extends Component {
 
   render() {
     let cartItems = [];
-    this.props.carts.slice(0, -1).forEach(cart => cartItems.push(cart.cart_items));
+    this.props.carts.forEach(cart => cartItems.push(cart.cart_items));
     cartItems = [].concat.apply([], cartItems);
 
     return (
