@@ -18,7 +18,7 @@ class CartsIndexItem extends React.Component {
             </Link>
           </li>
         </ul>
-        <ul className='cart-item-details'>
+        <ul className='purchased-cart-item-details'>
           <ul className='cart-item-details-left'>
             <li className='cart-item-name'>
               { this.props.cartItem.item_name }
