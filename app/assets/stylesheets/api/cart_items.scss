@@ -84,8 +84,14 @@
   margin-left: 34px;
 }
 
+.purchased-cart-item-details {
+  display: flex;
+}
+
 .cart-item-details {
   display: flex;
+  flex-direction: column;
+  margin-left: 35px;
 }
 
 .cart-item-details-right {
@@ -199,7 +205,7 @@
     }
 
     .cart-item-name {
-      width: 52px;
+      width: 120px;
       overflow-wrap: break-word;
     }
 

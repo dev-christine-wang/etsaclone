@@ -6,11 +6,13 @@ import CartsIndexItem from './carts_index_item';
 class CartsIndex extends Component {
   componentDidMount() {
     this.props.fetchCarts();
+    // debugger;
   }
 
   render() {
     let cartItems = [];
-    this.props.carts.forEach(cart => cartItems.push(cart.cart_items));
+    let purchasedCarts = this.props.carts.slice(0, -1);
+    purchasedCarts.forEach(cart => cartItems.push(cart.cart_items));
     cartItems = [].concat.apply([], cartItems);
 
     return (
