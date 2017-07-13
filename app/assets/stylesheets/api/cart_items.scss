@@ -1,11 +1,11 @@
 .cart-items-container, .purchased-cart-items-container {
-  margin: 40px auto 32px auto;
+  position: relative;
   width: 879px;
   height: auto;
-  position: relative;
+  margin: 40px auto 32px auto;
+  background-color: white;
   border: 1px solid $light-gray;
   border-radius: 4px;
-  background-color: white;
   font-family: sans-serif;
 }
 
@@ -179,4 +179,33 @@
 .remove-button {
   font-size: 14px;
   color: $blue;
+}
+
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .purchased-cart-items-container {
+      width: 879px;
+    }
+
+    .cart-item-image {
+      width: 120px;
+      height: 120px;
+    }
+
+    .cart-item-quantity {
+      left: 401px;
+    }
+
+    .cart-item-price {
+      left: 474px;
+    }
+
+    .cart-item-purchased {
+      left: 587px;
+    }
+
+    .cart-item-review {
+      left: 730px;
+    }
 }

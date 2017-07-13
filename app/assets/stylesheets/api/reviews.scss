@@ -92,3 +92,12 @@
   position: absolute;
   margin-left: 708px;
 }
+
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .review-description {
+      width: 93px;
+      height: 17px;
+    }
+}
