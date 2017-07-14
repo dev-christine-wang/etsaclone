@@ -18,7 +18,9 @@ class CartItemsIndex extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.updateCart({id: this.props.cartItems[0].cart_id, purchased: true}).then(this.createNewCart).then(this.navigateToPurchasedItems);
+    this.props.updateCart({id: this.props.cartItems[0].cart_id, purchased: true})
+              .then(this.createNewCart)
+              .then(this.navigateToPurchasedItems);
   }
 
   createNewCart() {
@@ -32,7 +34,7 @@ class CartItemsIndex extends Component {
   render() {
     const cartItems = this.props.cartItems;
     let totalPrice = 0;
-    cartItems.map(cartItem => totalPrice += (cartItem.item_price * cartItem.item_quantity));
+    cartItems.map(cartItem => totalPrice += cartItem.item_price * cartItem.item_quantity);
 
     if (cartItems.length === 0) {
       return (
