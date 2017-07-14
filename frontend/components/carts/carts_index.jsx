@@ -6,7 +6,6 @@ import CartsIndexItem from './carts_index_item';
 class CartsIndex extends Component {
   componentDidMount() {
     this.props.fetchCarts();
-    // debugger;
   }
 
   render() {
