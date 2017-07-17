@@ -26,29 +26,24 @@
 }
 
 .keep-shopping-button, .keep-shopping-button-empty {
-  margin-right: 49px;
   width: 120px;
-  text-align: center;
+  margin-right: 49px;
   padding: 6px 0;
   border: 1px solid $light-gray;
   border-radius: 4px;
   background-color: $light-blue;
+  text-align: center;
   color: white;
   font-size: 14px;
 }
 
-.keep-shopping-button:hover {
+.keep-shopping-button:hover, .keep-shopping-button-empty:hover {
   background-color: $lighter-blue;
   transition: background-color 0.3s;
 }
 
 .keep-shopping-button-empty {
   margin-right: 34px;
-}
-
-.keep-shopping-button-empty:hover {
-  background-color: $lighter-blue;
-  transition: background-color 0.3s;
 }
 
 .cart-items-box {
@@ -141,13 +136,13 @@
 }
 
 .purchase-button {
-  margin: 0 34px;
   width: 151px;
-  text-align: center;
+  margin: 0 34px;
   padding: 8px 0;
   border: 1px solid $light-gray;
   border-radius: 4px;
   background-color: $green;
+  text-align: center;
   color: white;
   font-size: 16px;
 }

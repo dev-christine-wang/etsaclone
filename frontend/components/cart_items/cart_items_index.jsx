@@ -55,13 +55,18 @@ class CartItemsIndex extends Component {
           <div className='cart-items-box'>
             <div>
               <ul className='cart-items'>
-                { cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id } cartItem={ cartItem } updateCartItem={ this.props.updateCartItem } deleteCartItem={ this.props.deleteCartItem } fetchCartItems={ this.props.fetchCartItems }/>)}
+                {cartItems.map(cartItem => <CartItemsIndexItem key={ cartItem.cart_item_id }
+                                                                cartItem={ cartItem }
+                                                                updateCartItem={ this.props.updateCartItem }
+                                                                deleteCartItem={ this.props.deleteCartItem }
+                                                                fetchCartItems={ this.props.fetchCartItems } />
+                )}
               </ul>
             </div>
             <div className='cart-details-flex-right'>
               <ul className='items-total'>
                 <li>{`Item(s) total:`}</li>
-                <li className='amount'>{ `$${totalPrice}.00` }</li>
+                <li className='amount'>{`$${totalPrice}.00`}</li>
               </ul>
               <form onSubmit={this.handleSubmit}>
                 <input className='purchase-button' type='submit' value='Make a purchase' />
