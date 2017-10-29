@@ -44,7 +44,7 @@ class ReviewForm extends React.Component {
 
   render() {
     return (
-      <form className='review-form' onSubmit={ this.handleSubmit }></p></p>
+      <form className='review-form' onSubmit={ this.handleSubmit }>
         <p>Rating</p>
         <Rating
           className='star'
