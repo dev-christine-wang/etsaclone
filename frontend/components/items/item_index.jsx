@@ -36,25 +36,25 @@ class ItemIndex extends Component {
 
     if (this.props.location.pathname === '/') {
       return (
-        <section className='section-description-preview'>
-          <h2 className='preview-items'>{ sectionHeader }</h2>
-          <div className='items-index'>
+        <div className='latest-items-index'>
+          <h2>{ sectionHeader }</h2>
+          <div className='latest-items'>
             <ul>
               { fewItems.map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
-        </section>
+        </div>
       );
     } else {
       return (
-        <section className='section-description-all'>
-          <h2 className='all-items'>{ sectionHeader }</h2>
-          <div className='items-index'>
+        <div className='all-items-index'>
+          <h2>{ sectionHeader }</h2>
+          <div className='all-items'>
             <ul>
               { items.map(item => <ItemIndexItem key={item.id} item={item} />)}
             </ul>
           </div>
-        </section>
+        </div>
       );
     }
   }
