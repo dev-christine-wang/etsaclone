@@ -5,8 +5,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding: 0.6rem 0;
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
   background-color: white;
@@ -14,32 +13,34 @@
   font-size: 14px;
   text-align: center;
   color: $darker-gray-2;
-}
 
-.my-info, .links {
-  display: flex;
-  justify-content: center;
-  margin-top: 5.5px;
-}
+  .my-info, .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5px;
+  }
 
-.my-info {
-  color: $blue;
-}
+  .my-info {
+    color: $blue;
+  }
 
-.links > li {
-  padding: 0 22px;
-}
+  .links {
+    li {
+      padding: 0 22px;
 
-.links > li:hover {
-  color: $darkest-gray;
-  transition: color 0.3s;
-}
+      &:hover {
+        color: $darkest-gray;
+        transition: color 0.3s;
+      }
+    }
 
-.github {
-  border-right: 1px solid $light-gray;
-}
+    li:first-of-type {
+      border-right: 1px solid $light-gray;
+    }
+  }
 
-.disclaimer {
-  margin-top: 11px;
-  font-size: 12px;
+  .disclaimer {
+    margin-top: 11px;
+    font-size: 12px;
+  }
 }
