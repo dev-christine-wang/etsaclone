@@ -26,14 +26,14 @@ class SearchForm extends React.Component {
   render() {
     return (
       <form className='search-bar' onSubmit={ this.handleSubmit }>
-        <ul>
-          <li>
-            <input className='search-input' type='text' placeholder={'Search jewelry collection'} value={ this.state.searchWords } onChange={ this.handleChange } />
-          </li>
-          <li>
-            <input className='search-submit-button' type='submit' value='Search' />
-          </li>
-        </ul>
+        <div>
+          <input className='search-input'
+                 type='text'
+                 placeholder={'Search jewelry collection'}
+                 value={ this.state.searchWords }
+                 onChange={ this.handleChange } />
+          <input className='search-submit-button' type='submit' value='Search' />
+        </div>
       </form>
     );
   }
