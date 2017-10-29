@@ -2,23 +2,25 @@
   color: $light-black;
 }
 
-.star {
-  margin-bottom: 10px;
-  color: $orange;
-}
+.review-form {
+  .star {
+    margin-bottom: 10px;
+    color: $orange;
+  }
 
-.review-description {
-  border: 1px solid $light-gray;
-  border-radius: 4px;
-  width: 210px;
-  height: 51px;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 12px;
-}
+  .review-description {
+    width: 210px;
+    height: 51px;
+    padding: 10px;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
 
-.submit-button {
-  color: $blue;
+  .submit-button {
+    color: $blue;
+  }
 }
 
 .item-reviews {

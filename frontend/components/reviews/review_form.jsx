@@ -44,37 +44,26 @@ class ReviewForm extends React.Component {
 
   render() {
     return (
-
-      <form onSubmit={ this.handleSubmit }>
-        <ul>
-          <li>Rating</li>
-          <li className='star'>
-            <Rating
-              empty='fa fa-star-o fa-1x'
-              full='fa fa-star fa-1x'
-              placeholder='fa fa-star fa-1x'
-              placeholderRate={this.state.rating}
-              start={ 0 }
-              end={ 5 }
-              onChange={rate => this.handleRate(rate)}
-            />
-          </li>
-          <li>Description</li>
-          <li>
-            <textarea
-              className='review-description'
-              value={ this.state.description }
-              onChange={ this.handleChange }
-            />
-          </li>
-          <li>
-            <input
-              className='submit-button'
-              type='submit'
-              value='Submit review'
-            />
-          </li>
-        </ul>
+      <form className='review-form' onSubmit={ this.handleSubmit }></p></p>
+        <p>Rating</p>
+        <Rating
+          className='star'
+          empty='fa fa-star-o fa-1x'
+          full='fa fa-star fa-1x'
+          placeholder='fa fa-star fa-1x'
+          placeholderRate={this.state.rating}
+          start={ 0 }
+          end={ 5 }
+          onChange={rate => this.handleRate(rate)} />
+        <p>Description</p>
+        <textarea
+          className='review-description'
+          value={ this.state.description }
+          onChange={ this.handleChange } />
+        <input
+          className='submit-button'
+          type='submit'
+          value='Submit review' />
       </form>
     );
   }
