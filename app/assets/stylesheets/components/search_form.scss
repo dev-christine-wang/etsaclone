@@ -30,3 +30,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 780px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .search-bar {
+    div {
+      width: 90%;
+    }
+  }
+}
