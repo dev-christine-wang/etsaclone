@@ -7,6 +7,10 @@ export class ItemCategoryIndex extends Component {
     this.state = { category: null };
   }
 
+  componentWillMount() {
+    this.props.clearItems();
+  }
+  
   componentDidMount() {
     const categories = this.props.location.pathname.split('/');
     const category = categories[categories.length - 1];

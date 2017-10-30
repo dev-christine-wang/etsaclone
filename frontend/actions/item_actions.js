@@ -2,6 +2,7 @@ import * as APIUtil from '../util/item_api_util';
 
 export const RECEIVE_ITEMS = 'RECEIVE_ITEMS';
 export const RECEIVE_ITEM = 'RECEIVE_ITEM';
+export const CLEAR_ITEMS = 'CLEAR_ITEMS';
 
 export const receiveItems = items => ({
   type: RECEIVE_ITEMS,
@@ -11,6 +12,11 @@ export const receiveItems = items => ({
 export const receiveItem = item => ({
   type: RECEIVE_ITEM,
   item
+});
+
+export const clearItems = () => ({
+  type: CLEAR_ITEMS,
+  items: {}
 });
 
 export const fetchItems = () => dispatch => (

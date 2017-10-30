@@ -7,7 +7,11 @@ class ItemIndex extends Component {
   constructor(props) {
     super(props);
   }
-  
+
+  componentWillMount() {
+    this.props.clearItems();
+  }
+
   componentDidMount() {
     if (this.props.location.query.searchWords) {
       this.props.fetchSearchedItems(this.props.location.query.searchWords);
