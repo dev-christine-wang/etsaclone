@@ -4,8 +4,9 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import Masthead from './masthead/masthead';
-import ItemIndexContainer from './items/item_index_container';
 import SessionFormContainer from './session_form/session_form_container';
+import ItemIndexContainer from './items/item_index_container';
+import ItemCategoryIndexContainer from './items/item_category_index_container';
 import ItemShowContainer from './items/item_show_container';
 import CartItemFormContainer from './cart_items/cart_item_form_container';
 import CartItemsIndexContainer from './cart_items/cart_items_index_container';
@@ -35,6 +36,9 @@ const Root = ({ store }) => {
           <Route path='/register' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/signin' component={ SessionFormContainer } onEnter={ _redirectIfSignedIn } />
           <Route path='/items' component={ ItemIndexContainer } />
+          <Route path='/items/earrings' component={ ItemCategoryIndexContainer } />
+          <Route path='/items/necklace' component={ ItemCategoryIndexContainer } />
+          <Route path='/items/ring' component={ ItemCategoryIndexContainer } />
           <Route path='/items/:itemId' component={ ItemShowContainer } />
           <Route path='/cart' component={ CartItemsIndexContainer } onEnter={ _ensureSignedIn }/>
           <Route path='/purchased_items' component={ CartsIndexContainer } onEnter={ _ensureSignedIn }/>
