@@ -16,16 +16,14 @@ class CartsIndex extends Component {
 
     return (
       <div className='purchased-cart-items-container'>
-        <div className='cart-items-top'>
+        <div className='cart-items-details-top'>
           <h2>Purchases</h2>
-          <Link className='keep-shopping-button-empty' to={`/items`}>Keep shopping</Link>
+          <Link className='keep-shopping-button' to={`/items`}>Keep shopping</Link>
         </div>
-        <div className='cart-items-box'>
-          <div>
-            <ul className='cart-items'>
-              { cartItems.reverse().map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
-            </ul>
-          </div>
+        <div className='cart-items-details-bottom'>
+          <ul className='cart-items'>
+            { cartItems.reverse().map(cartItem => <CartsIndexItem key={cartItem.cart_item_id} cartItem={cartItem} />)}
+          </ul>
         </div>
       </div>
     );

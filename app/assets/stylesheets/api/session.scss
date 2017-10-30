@@ -1,51 +1,49 @@
 .register-form-box, .signin-form-box {
-  margin: 40px auto;
-  padding: .30%;
   width: 40%;
-  background-color: $gray;
+  padding: .30%;
   border: 1px solid $gray;
   border-radius: 4px;
+  margin: 40px auto;
+  background-color: $gray;
   font-family: $sans-serif;
   font-size: 12px;
 }
 
 .register-message, .sign-in-message {
-  margin: auto;
-  padding: 3%;
   width: 93.73%;
-  background-color: $lightest-gray;
-  border-top: 1px solid $dark-gray;
-  border-right: 1px solid $dark-gray;
-  border-left: 1px solid $dark-gray;
+  padding: 3%;
+  border: 1px solid $dark-gray;
+  border-bottom: 0px;
   border-radius: 4px 4px 0 0;
+  margin: auto;
+  background-color: $lightest-gray;
   font-size: 20px;
   color: $darkest-gray;
 }
 
 .register-form, .signin-form {
-  margin: auto;
-  padding: 5% 8%;
   width: 83.73%;
-  background-color: white;
-  border-left: 1px solid $dark-gray;
-  border-right: 1px solid $dark-gray;
-  border-bottom: 1px solid $dark-gray;
+  padding: 5% 8%;
+  border: 1px solid $dark-gray;
+  border-top: 0px;
   border-radius: 0 0  4px 4px;
+  margin: auto;
+  background-color: white;
 }
 
 .register-form input, .signin-form input {
-  margin: 2px 0 8px 0;
-  border: 1px solid $dark-gray;
   width: 40%;
   height: 30px;
+  border: 1px solid $dark-gray;
+  margin: 2px 0 8px 0;
 }
 
 .register-form input[type=submit], .signin-form input[type=submit] {
   margin: 8px 0;
   width: 90px;
-  background-color: $light-blue;
   border: 1px solid $dark-gray;
   border-radius: 4px;
+  background-color: $light-blue;
   text-align: center;
   font-size: 14px;
   font-weight: bold;

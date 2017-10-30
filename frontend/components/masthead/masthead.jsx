@@ -3,20 +3,14 @@ import { Link } from 'react-router';
 
 const Masthead = () => {
   return(
-    <header className='masthead'>
-      <div className='masthead-image'>
+    <header>
+      <div className='masthead'>
         <img src={window.images.masthead} alt='EtsAClone' />
         <ul className='masthead-message'>
-          <li className='masthead-message-line-1'>
-            Whoever you are, find
-          </li>
-          <li className='masthead-message-line-2'>
-            whatever you're into
-          </li>
+          <li>Whoever you are, find</li>
+          <li>whatever you're into</li>
         </ul>
-      </div>
-      <div>
-        <Link  className='shop-link' to='/items' activeClassName='current'>Shop our jewelry collection</Link>
+        <Link className='shop-link' to='/items' activeClassName='current'>Shop our jewelry collection</Link>
       </div>
     </header>
   );

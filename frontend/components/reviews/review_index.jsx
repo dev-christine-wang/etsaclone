@@ -23,21 +23,19 @@ class ReviewIndex extends Component {
 
     return (
       <section className='reviews-section'>
-        <ul className='avg-rating'>
-          <li className='review-header'>Reviews</li>
-          <li className='avg-stars'>
-            <Rating
-              empty='fa fa-star-o fa-1x'
-              full='fa fa-star fa-1x'
-              placeholder='fa fa-star fa-1x'
-              placeholderRate={ avgRating }
-              start={ 0 }
-              end={ 5 }
-              readonly
-              />
-          </li>
-          <li className='rating-count'>{ `(${reviewCount})` }</li>
-        </ul>
+        <div className='avg-rating'>
+          <p className='review-header'>Reviews</p>
+          <Rating
+            className='avg-stars'
+            empty='fa fa-star-o fa-1x'
+            full='fa fa-star fa-1x'
+            placeholder='fa fa-star fa-1x'
+            placeholderRate={ avgRating }
+            start={ 0 }
+            end={ 5 }
+            readonly />
+          <p className='rating-count'>{ `(${reviewCount})` }</p>
+        </div>
         <ul className='reviews'>
           { reviews.reverse().map(review => <ReviewIndexItem key={review.id} review={review} />)}
         </ul>

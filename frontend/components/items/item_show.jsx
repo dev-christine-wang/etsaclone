@@ -14,19 +14,17 @@ class ItemShow extends Component {
 
     if (item) {
       return (
-        <div className='item-show'>
-          <div className='item-show-top'>
-            <div className='item-show-image'>
-              <img src={ item.image } alt={ item.name } />
-            </div>
-            <div className='item-show-details'>
+        <div className='item'>
+          <div className='item-top'>
+            <img src={ item.image } alt={ item.name } />
+            <div className='item-details'>
               <ul>
-                <li>{ item.name }</li>
-                <li className='item-show-seller'>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
-                <li className='item-show-price'>{ `$${item.price}.00` }</li>
-                <li className='overview'></li>
+                <li className='item-name'>{ item.name }</li>
+                <li className='item-seller'>{ `${item.seller.first_name} ${item.seller.last_name}` }</li>
+                <li className='item-price'>{ `$${item.price}.00` }</li>
+                <li className='item-details-bottom'></li>
                 <CartItemFormContainer />
-                <li>{ item.description }</li>
+                <li className='item-description'>{ item.description }</li>
               </ul>
             </div>
           </div>
