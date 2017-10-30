@@ -8,6 +8,12 @@ class CartsIndex extends Component {
     this.props.fetchCarts();
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.carts !== nextProps.carts) {
+      this.props.fetchCarts();
+    }
+  }
+
   render() {
     let cartItems = [];
     let purchasedCarts = this.props.carts.slice(0, -1);
