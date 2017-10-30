@@ -4,6 +4,10 @@ import { Link } from 'react-router';
 import ItemIndexItem from './item_index_item';
 
 class ItemIndex extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
   componentDidMount() {
     if (this.props.location.query.searchWords) {
       this.props.fetchSearchedItems(this.props.location.query.searchWords);

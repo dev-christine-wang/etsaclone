@@ -4,6 +4,10 @@ import { Link } from 'react-router';
 import CartsIndexItem from './carts_index_item';
 
 class CartsIndex extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
   componentDidMount() {
     this.props.fetchCarts();
   }

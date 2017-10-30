@@ -4,6 +4,10 @@ import CartItemFormContainer from '../cart_items/cart_item_form_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
 
 class ItemShow extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
   componentDidMount() {
     this.props.fetchItem(this.props.params.itemId);
     this.props.fetchReviews(this.props.params.itemId);
