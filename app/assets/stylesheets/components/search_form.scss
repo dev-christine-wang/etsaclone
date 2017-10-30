@@ -1,9 +1,11 @@
 .search-bar {
   display: flex;
+  justify-content: space-around;
   width: 100%;
 
   div {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     border: 1px solid $dark-gray;
     border-radius: 4px;
@@ -33,7 +35,13 @@
 
 @media only screen and (max-width: 780px) {
   .search-bar {
-    display: none;
+    div {
+      margin-left: 0px;
+
+      .search-input {
+        width: 100%;
+      }
+    }
   }
 }
 

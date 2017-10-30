@@ -8,13 +8,16 @@ const sessionSignInLinks = signin => (
     <div className='top-nav-top'>
       <nav className='logo'>
         <Link to='/' activeClassName='current'>EtsAClone</Link>
-        <SearchFormContainer />
+        <div className='search-form-top'><SearchFormContainer /></div>
       </nav>
       <nav className='register-signin-nav'>
         <Link className='register-link' to='/register' activeClassName='current'>Register</Link>
         <Link className='session-link' to='/signin' activeClassName='current'>Sign In</Link>
         <button className='demo-link' onClick={ () => signin({ first_name: 'Demo', last_name: 'User', email: 'demouser@gmail.com', password: 'password' })}>Demo</button>
       </nav>
+    </div>
+    <div className='top-nav-middle'>
+      <div className='search-form-bottom'><SearchFormContainer /></div>
     </div>
     <div className='top-nav-bottom'>
       <nav className='categories'>
@@ -29,7 +32,7 @@ const sessionSignOutLink = (currentUser, signout) => (
     <div className='top-nav-top'>
       <nav className='logo'>
         <Link to='/' activeClassName='current'>EtsAClone</Link>
-        <SearchFormContainer />
+        <div className='search-form-top'><SearchFormContainer /></div>
       </nav>
       <nav className='signout-nav'>
         <div className='user'>
@@ -52,6 +55,9 @@ const sessionSignOutLink = (currentUser, signout) => (
           </div>
         </Link>
       </nav>
+    </div>
+    <div className='top-nav-middle'>
+      <div className='search-form-bottom'><SearchFormContainer /></div>
     </div>
     <div className='top-nav-bottom'>
       <nav className='categories'>
